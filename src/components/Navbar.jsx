@@ -5,7 +5,7 @@ import Logo from "../assets/Photography_Logo_W_crop.png";
 const Navbar = () => {
   return (
     <div>
-      <nav className="navbar">
+      <nav className="navbar navbar-expand-lg">
         <a href="/" className="navbar-brand">
           <img src={Logo} alt="nn photography" className="logo-navbar" />
         </a>

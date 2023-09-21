@@ -7,14 +7,50 @@ import GridIcon from "../assets/icons/grid-90.png";
 const Home = () => {
   return (
     <div className="home-slider">
+      {/* Navbar */}
       <Navbar />
-      <div className="overlay"></div>
+      {/* Slider */}
+      {/* <div className="overlay"></div> */}
       <div className="banner">
         <div className="video">
           {/* <Slider /> */}
           <Slider />
         </div>
       </div>
+      {/* Details Section */}
+      {/* <div className="main-text">
+        <div className="main-small-header">Nitesh Nagpal</div>
+        <h1 className="main-header">Photographer</h1>
+        <div className="main-categories">
+          <div className="main-category-container">
+            <div className="dot-separator main-dot-separator w-hidden-tiny w-condition-invisible">
+              <div>•</div>
+            </div>
+            <a href="/" className="main-category w-inline-bock">
+              <div>Landscape</div>
+              <div className="underline main-text-underline"></div>
+            </a>
+          </div>
+          <div className="main-category-container">
+            <div className="dot-separator main-dot-separator w-hidden-tiny">
+              <div>•</div>
+            </div>
+            <a href="/" className="main-category w-inline-bock">
+              <div>Wildlife</div>
+              <div className="underline main-text-underline"></div>
+            </a>
+          </div>
+          <div className="main-category-container">
+            <div className="dot-separator main-dot-separator w-hidden-tiny">
+              <div>•</div>
+            </div>
+            <a href="/" className="main-category w-inline-bock">
+              <div>Portrait</div>
+              <div className="underline main-text-underline"></div>
+            </a>
+          </div>
+        </div>
+      </div> */}
       {/* footer Buttons */}
       <div className="home-footer">
         <div className="circle-border">

@@ -61,15 +61,27 @@ body {
 .navbar {
   /* background-color: red; */
   padding: 0 15px;
+  z-index: 999;
 }
 
+.nav-link {
+  color: white;
+  font-weight: 600;
+}
+
+/* .nav-link:hover {
+  background-color: red;
+} */
+
 .navbar-nav {
-  width: 40%;
+  width: 30%;
+  /* background-color: red; */
 }
 
 .nav-item {
+  /* background-color: blue; */
   margin: 0 auto;
-  width: 150px;
+  width: 100%;
   text-align: center;
 }
 
@@ -82,6 +94,7 @@ body {
   bottom: 2%;
   padding: 0 15px;
   width: 100%;
+  z-index: 999;
 }
 .circle-border {
   position: relative;
@@ -388,4 +401,125 @@ body {
 
 .fa-instagram {
   margin: 30% 32.5%;
+}
+
+.main-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  color: var(--whiteColor);
+  z-index: 2;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.main-small-header {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.main-header {
+  letter-spacing: 18px;
+  font-size: 70px;
+  line-height: 80px;
+  margin: 16px 0;
+  text-transform: uppercase;
+  max-width: 970px;
+  z-index: 1;
+  position: relative;
+  font-weight: 700;
+}
+
+.main-categories {
+  display: flex;
+  margin-top: 24px;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.main-category-container {
+  display: flex;
+}
+
+.main-category {
+  position: relative;
+  overflow: hidden;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+.w-inline-bock {
+  display: inline-block;
+  max-width: 100%;
+}
+
+/* .underline { */
+/* position: absolute; */
+/* left: 25%;
+  top: 0;
+  bottom: 0; */
+/* background-color: green; */
+/* opacity: 0.25; */
+/* margin-top: -9px; */
+/* width: 25%;
+  height: 5px; */
+/* } */
+
+.main-text-underline {
+  width: 0%;
+  border-bottom: 2px solid white;
+  /* margin-top: 10px; */
+  /* background-color: white; */
+  opacity: 1;
+  height: 2px;
+  /* display: none; */
+}
+
+.main-category:hover .main-text-underline {
+  animation: displayUnderline 500ms linear forwards;
+}
+
+@keyframes displayUnderline {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 50%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.dot-separator {
+  display: inline-block;
+}
+
+.main-dot-separator {
+  padding: 0 16px;
+}
+
+.w-condition-invisible {
+  display: none !important;
 }
