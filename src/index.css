@@ -395,8 +395,24 @@ body {
   color: var(--whiteColor);
 }
 
+.youpic-img {
+  width: 30px;
+  height: 30px;
+  margin: 20%;
+}
+
+.px500_icon {
+  width: 30px;
+  height: 30px;
+  margin: 20%;
+}
+
 .fa-facebook-f {
   margin: 30% 37.5%;
+}
+
+.fa-twitter {
+  margin: 30%;
 }
 
 .fa-instagram {
