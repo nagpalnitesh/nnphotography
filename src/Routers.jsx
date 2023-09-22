@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import Navbar from "./components/Navbar";
 import Home from "./screens/Home";
 import Gallery from "./screens/Gallery";
+import About from "./screens/About";
+import Contact from "./screens/Contact";
 
 const Routers = () => {
   return (
@@ -18,9 +20,9 @@ const Routers = () => {
                 {/* Gallery */}
                 <Route exact path="/gallery" element={<Gallery />} />
                 {/* About Me */}
-                <Route exact path="/about-me" element={<Home />} />
+                <Route exact path="/about-me" element={<About />} />
                 {/* Contact Me */}
-                <Route exact path="/contact-me" element={<Home />} />
+                <Route exact path="/contact-me" element={<Contact />} />
               </Routes>
             </div>
           </div>

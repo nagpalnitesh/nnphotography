@@ -72,7 +72,11 @@ const Home = () => {
             </div>
           </div> */}
           {/* Facebook */}
-          <a href="https://www.facebook.com/nnphotography09">
+          <a
+            href="https://www.facebook.com/nnphotography09"
+            target="_blank"
+            rel="noreferrer"
+          >
             <div className="pie-wrapper progress-45 style-2 mx-3">
               <span className="label">
                 {/* <img
@@ -90,7 +94,11 @@ const Home = () => {
             </div>
           </a>
           {/* Twitter */}
-          <a href="https://twitter.com/_niteshnagpal_">
+          <a
+            href="https://twitter.com/_niteshnagpal_"
+            target="_blank"
+            rel="noreferrer"
+          >
             <div className="pie-wrapper progress-45 style-2 mx-3">
               <span className="label">
                 {/* <img
@@ -109,7 +117,11 @@ const Home = () => {
             </div>
           </a>
           {/* Youpic */}
-          <a href="https://youpic.com/photographer/NN_Photography/">
+          <a
+            href="https://youpic.com/photographer/NN_Photography/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <div className="pie-wrapper progress-45 style-2 mx-3">
               <span className="label">
                 <img
@@ -127,7 +139,11 @@ const Home = () => {
             </div>
           </a>
           {/* Instagram */}
-          <a href="https://www.instagram.com/__nnphotography__/">
+          <a
+            href="https://www.instagram.com/__nnphotography__/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <div className="pie-wrapper progress-45 style-2 mx-3">
               <span className="label">
                 {/* <img
@@ -145,7 +161,11 @@ const Home = () => {
             </div>
           </a>
           {/* 500px */}
-          <a href="https://500px.com/p/niteshnagpal">
+          <a
+            href="https://500px.com/p/niteshnagpal"
+            target="_blank"
+            rel="noreferrer"
+          >
             <div className="pie-wrapper progress-45 style-2 mx-3">
               <span className="label">
                 <img
