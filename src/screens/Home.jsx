@@ -56,7 +56,7 @@ const Home = () => {
       {/* footer Buttons */}
       <div className="home-footer">
         <div className="circle-border">
-          <a href="/">
+          <a href="/gallery">
             <div className="circle-border-img">
               <img src={GridIcon} alt="view gallery" className="gallery-grid" />
               <div className="gallery-text">View Gallery</div>
