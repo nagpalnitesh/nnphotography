@@ -37,8 +37,6 @@ const Contact = () => {
           Email:{" "}
           <a
             href="mailto:niteshnagpal@outlook.com"
-            target="_blank"
-            rel="noreferrer"
             className="footer-link w-inline-block"
           >
             niteshnagpal@outlook.com
