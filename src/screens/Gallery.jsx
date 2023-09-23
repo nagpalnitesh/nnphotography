@@ -3,6 +3,8 @@ import Navbar from "../components/Navbar";
 
 import HeaderImg from "../assets/images/nature-1.jpg";
 import HeaderImg2 from "../assets/images/nature-2.jpg";
+import ArrowIcon from "../assets/icons/arrow-90.png";
+import LeftArrowIcon from "../assets/icons/left-arrow-90.png";
 import PageHeader from "../components/PageHeader";
 import Footer from "../components/Footer";
 
@@ -613,6 +615,12 @@ const Gallery = () => {
             <div className="action-small-title">Contact Me</div>
             <h5>Let's Work Together</h5>
           </div>
+          <img
+            src={LeftArrowIcon}
+            className="action-arrow-icon action-arrow left-arrow"
+            alt="arrow-icon"
+            // style={{ transform: "rotate(-180deg)" }}
+          />
         </a>
         <a
           href="/about-me"
@@ -631,6 +639,11 @@ const Gallery = () => {
             </div>
             <h5>Learn More About Me</h5>
           </div>
+          <img
+            src={ArrowIcon}
+            className="action-arrow-icon action-arrow"
+            alt="arrow-icon"
+          />
         </a>
       </div>
       {/* FOOTER */}

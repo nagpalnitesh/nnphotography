@@ -947,3 +947,39 @@ textarea:focus + label {
   align-items: center;
   transition: 300ms ease;
 } */
+
+.action-arrow-icon {
+  z-index: 1;
+}
+
+.action-arrow {
+  transform: translate3d(0px, -24px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  opacity: 0;
+  display: none;
+  width: 60px;
+  height: 60px;
+  margin: 20px 0 0 0;
+}
+
+.action-block:hover .action-arrow {
+  /* opacity: 1; */
+  display: block;
+  animation: actionIcon 500ms linear forwards;
+}
+
+@keyframes actionIcon {
+  0% {
+    opacity: 0.25;
+    transform: translateY(-50px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-25px);
+  }
+  100% {
+    opacity: 1;
+    /* transform: translateY(0px); */
+  }
+}
