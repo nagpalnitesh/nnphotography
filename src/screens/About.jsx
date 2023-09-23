@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "../components/Navbar";
 
 import HeaderImg from "../assets/images/nature-1.jpg";
-import HeaderImg2 from "../assets/images/nature-2.jpg";
 import PageHeader from "../components/PageHeader";
 import Footer from "../components/Footer";
 
