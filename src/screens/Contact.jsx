@@ -62,6 +62,10 @@ const Contact = () => {
 
   return (
     <div className="gallery">
+      <div className="overlay"></div>
+      <div className="banner">
+        <img src={HeaderImg} alt="Background Image" />
+      </div>
       <Navbar />
       {/* TODO: parallax background with overlay */}
       <div className="gallery-page-header">
@@ -90,9 +94,12 @@ const Contact = () => {
           Email:{" "}
           <a
             href="mailto:niteshnagpal@outlook.com"
-            className="footer-link w-inline-block"
+            className="footer-social-link w-inline-bock "
           >
-            niteshnagpal@outlook.com
+            <div>
+              <b>niteshnagpal@outlook.com</b>
+            </div>
+            <div className="underline footer-social-underline"></div>
           </a>
         </div>
       </div>

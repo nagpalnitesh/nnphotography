@@ -217,14 +217,14 @@ body {
   background-repeat: repeat, no-repeat; */
 }
 
-.home-slider .overlay {
+.gallery .overlay {
   position: fixed;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
   background: var(--whiteColor);
-  opacity: 0.2;
+  opacity: 0.9;
   /* background: -moz-linear-gradient(
     left,
     rgba(255, 62, 28, 0.5) 0%,
@@ -269,6 +269,17 @@ body {
 }
 
 .home-slider .banner .video {
+  z-index: -2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.gallery .banner img {
   z-index: -2;
   position: fixed;
   top: 0;
@@ -994,4 +1005,52 @@ textarea:valid + label {
     opacity: 1;
     /* transform: translateY(0px); */
   }
+}
+
+.about-me {
+  margin: 20px 0;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.my-photo {
+  position: relative;
+  display: flex;
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  align-items: center;
+  background: red;
+}
+
+.my-photo img {
+  width: 450px;
+  height: 450px;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 0.5em;
+}
+
+.about-me-text {
+  position: relative;
+  display: flex;
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  /* flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  align-items: center; */
+}
+
+.about-me-text div {
+  width: 60%;
+  margin: auto;
+}
+
+.about-me-text div p {
+  font-size: 18px;
 }
