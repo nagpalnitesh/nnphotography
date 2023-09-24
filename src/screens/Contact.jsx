@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 
 import HeaderImg from "../assets/images/nature-1.jpg";
@@ -7,6 +7,26 @@ import PageHeader from "../components/PageHeader";
 import Footer from "../components/Footer";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    first_name: "",
+    last_name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const isEmailFilled = () => {
+    return formData.email.trim() !== "";
+  };
+
+  console.log(isEmailFilled());
+
   return (
     <div className="gallery">
       <Navbar />
@@ -72,17 +92,21 @@ const Contact = () => {
             </label>
           </p>
           <p
-            class="field required half"
+            class={`field required half ${
+              isEmailFilled() ? "email-invalid" : ""
+            }`}
             style={{ marginLeft: "0em", marginRight: "2em" }}
           >
             <input
               class="text-input"
               id="email"
               name="email"
-              required="<%= true %>"
+              required
               type="email"
+              value={formData.email}
+              onChange={handleChange}
             ></input>
-            <label class="label" for="email">
+            <label className="label" for="email">
               E-mail (required)
             </label>
           </p>

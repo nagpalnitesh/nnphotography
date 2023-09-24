@@ -899,15 +899,27 @@ h5 {
 .form .label {
   position: absolute;
   display: flex;
-  transition: 300ms ease;
+  transition: all ease 300ms;
 }
 
-input:focus + label {
+input:focus + label,
+textarea:focus + label,
+input:valid + label,
+textarea:valid + label {
   transform: translateY(-27px);
 }
-textarea:focus + label {
+
+.email-invalid input:invalid + label {
   transform: translateY(-27px);
 }
+
+/* {
+  transform: translateY(-27px);
+} */
+
+/* .field:nth-child(3) input {
+  background-color: red;
+} */
 
 @media screen and (min-width: 40em) {
   .form .field.half {
