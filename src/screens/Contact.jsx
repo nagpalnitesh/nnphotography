@@ -8,12 +8,12 @@ import Footer from "../components/Footer";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    first_name: "test",
-    last_name: "mail",
-    email: "test@mail.com",
-    phone: "9517538624",
-    subject: "test contact form",
-    message: "test message",
+    first_name: "",
+    last_name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
   });
 
   const handleChange = (text) => (e) => {
