@@ -17,7 +17,6 @@ const Contact = () => {
   });
 
   const handleChange = (text) => (e) => {
-    console.log(text);
     // const { name, value } = e.target;
     setFormData({ ...formData, [text]: e.target.value });
   };
@@ -26,18 +25,18 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      console.log("FORM DATA", formData);
-      const response = await fetch("http://localhost:3001/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://nnphotography-backend.onrender.com/send-email",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       if (response.ok) {
-        console.log("Email sent successfully");
-        console.log("response: ", response);
         setFormData({
           first_name: "",
           last_name: "",
@@ -100,10 +99,10 @@ const Contact = () => {
 
       {/* COntact FORM */}
       <div className="contact-form">
-        <form class="form" onSubmit={handleSubmit}>
-          <p class="field required half">
+        <form className="form" onSubmit={handleSubmit}>
+          <p className="field required half">
             <input
-              class="text-input"
+              className="text-input"
               id="first-name"
               name="first-name"
               required="<%= true %>"
@@ -111,13 +110,13 @@ const Contact = () => {
               value={formData.first_name}
               onChange={handleChange("first_name")}
             />
-            <label class="label required" for="name">
+            <label className="label required" htmlFor="name">
               First Name (required)
             </label>
           </p>
-          <p class="field required half">
+          <p className="field required half">
             <input
-              class="text-input"
+              className="text-input"
               id="last-name"
               name="last-name"
               value={formData.last_name}
@@ -125,18 +124,18 @@ const Contact = () => {
               required="<%= true %>"
               type="text"
             ></input>
-            <label class="label required" for="name">
+            <label className="label required" htmlFor="name">
               Last Name (required)
             </label>
           </p>
           <p
-            class={`field required half ${
+            className={`field required half ${
               isEmailFilled() ? "email-invalid" : ""
             }`}
             style={{ marginLeft: "0em", marginRight: "2em" }}
           >
             <input
-              class="text-input"
+              className="text-input"
               id="email"
               name="email"
               required
@@ -144,13 +143,13 @@ const Contact = () => {
               value={formData.email}
               onChange={handleChange("email")}
             ></input>
-            <label className="label" for="email">
+            <label className="label" htmlFor="email">
               E-mail (required)
             </label>
           </p>
-          <p class="field required half">
+          <p className="field required half">
             <input
-              class="text-input"
+              className="text-input"
               id="phone-number"
               name="phone-number"
               required="<%= true %>"
@@ -158,13 +157,13 @@ const Contact = () => {
               value={formData.phone}
               onChange={handleChange("phone")}
             ></input>
-            <label class="label" for="phone-number">
+            <label className="label" htmlFor="phone-number">
               Phone Number
             </label>
           </p>
-          <p class="field">
+          <p className="field">
             <input
-              class="textarea"
+              className="textarea"
               // cols="50"
               id="subject"
               name="subject"
@@ -173,13 +172,13 @@ const Contact = () => {
               value={formData.subject}
               onChange={handleChange("subject")}
             />
-            <label class="label" for="subject">
+            <label className="label" htmlFor="subject">
               Subject
             </label>
           </p>
-          <p class="field">
+          <p className="field">
             <textarea
-              class="textarea"
+              className="textarea"
               cols="50"
               id="message"
               name="message"
@@ -188,12 +187,16 @@ const Contact = () => {
               value={formData.message}
               onChange={handleChange("message")}
             ></textarea>
-            <label class="label" for="message">
+            <label className="label" htmlFor="message">
               Message
             </label>
           </p>
-          <p class="field">
-            <input class="button" type="submit" value="Send message"></input>
+          <p className="field">
+            <input
+              className="button"
+              type="submit"
+              value="Send message"
+            ></input>
           </p>
         </form>
       </div>
