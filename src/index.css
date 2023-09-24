@@ -1024,7 +1024,6 @@ textarea:valid + label {
   -webkit-box-pack: center;
   justify-content: center;
   align-items: center;
-  background: red;
 }
 
 .my-photo img {
