@@ -8,24 +8,58 @@ import Footer from "../components/Footer";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    first_name: "",
-    last_name: "",
-    email: "",
-    phone: "",
-    subject: "",
-    message: "",
+    first_name: "test",
+    last_name: "mail",
+    email: "test@mail.com",
+    phone: "9517538624",
+    subject: "test contact form",
+    message: "test message",
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+  const handleChange = (text) => (e) => {
+    console.log(text);
+    // const { name, value } = e.target;
+    setFormData({ ...formData, [text]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      console.log("FORM DATA", formData);
+      const response = await fetch("http://localhost:3001/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        console.log("Email sent successfully");
+        console.log("response: ", response);
+        setFormData({
+          first_name: "",
+          last_name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+        });
+        // Handle success, e.g., show a success message.
+      } else {
+        console.error("Error sending email");
+        // Handle error, e.g., show an error message.
+      }
+    } catch (error) {
+      console.error("Error sending email", error);
+      // Handle error, e.g., show an error message.
+    }
   };
 
   const isEmailFilled = () => {
     return formData.email.trim() !== "";
   };
-
-  console.log(isEmailFilled());
 
   return (
     <div className="gallery">
@@ -66,7 +100,7 @@ const Contact = () => {
 
       {/* COntact FORM */}
       <div className="contact-form">
-        <form class="form">
+        <form class="form" onSubmit={handleSubmit}>
           <p class="field required half">
             <input
               class="text-input"
@@ -74,6 +108,8 @@ const Contact = () => {
               name="first-name"
               required="<%= true %>"
               type="text"
+              value={formData.first_name}
+              onChange={handleChange("first_name")}
             />
             <label class="label required" for="name">
               First Name (required)
@@ -84,6 +120,8 @@ const Contact = () => {
               class="text-input"
               id="last-name"
               name="last-name"
+              value={formData.last_name}
+              onChange={handleChange("last_name")}
               required="<%= true %>"
               type="text"
             ></input>
@@ -104,7 +142,7 @@ const Contact = () => {
               required
               type="email"
               value={formData.email}
-              onChange={handleChange}
+              onChange={handleChange("email")}
             ></input>
             <label className="label" for="email">
               E-mail (required)
@@ -117,6 +155,8 @@ const Contact = () => {
               name="phone-number"
               required="<%= true %>"
               type="tel"
+              value={formData.phone}
+              onChange={handleChange("phone")}
             ></input>
             <label class="label" for="phone-number">
               Phone Number
@@ -130,6 +170,8 @@ const Contact = () => {
               name="subject"
               required="<%= true %>"
               // rows="4"
+              value={formData.subject}
+              onChange={handleChange("subject")}
             />
             <label class="label" for="subject">
               Subject
@@ -143,6 +185,8 @@ const Contact = () => {
               name="message"
               required="<%= true %>"
               rows="4"
+              value={formData.message}
+              onChange={handleChange("message")}
             ></textarea>
             <label class="label" for="message">
               Message
