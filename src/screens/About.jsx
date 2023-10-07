@@ -12,7 +12,7 @@ const About = () => {
     <div className="gallery">
       <div className="overlay"></div>
       <div className="banner">
-        <img src={HeaderImg} alt="Background Image" />
+        <img src={HeaderImg} alt="Background" />
       </div>
 
       <Navbar />

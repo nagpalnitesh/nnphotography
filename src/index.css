@@ -115,13 +115,14 @@ body {
 
 .home-footer {
   position: absolute;
-  bottom: 2%;
+  bottom: 2.5%;
   padding: 0 15px;
   width: 100%;
   z-index: 999;
 }
 .circle-border {
   position: relative;
+  width: fit-content;
 }
 
 .circle-border-img {
@@ -153,6 +154,8 @@ body {
   color: var(--whiteColor);
   font-weight: 700;
   text-transform: uppercase;
+  width: 250px;
+  text-align: center;
 }
 
 .gallery-text p {
@@ -337,6 +340,18 @@ body {
   right: 15px;
 }
 
+.social-icons a {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 0 6px;
+  -webkit-box-pack: center;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  display: flex;
+}
+
 .pie-wrapper {
   height: 50px;
   width: 50px;
@@ -347,16 +362,17 @@ body {
   clear: both;
 }
 .pie-wrapper .pie {
-  height: 100%;
-  width: 100%;
+  height: 50px;
+  width: 50px;
   clip: rect(0, 50px, 50px, 0);
   left: 0;
   position: absolute;
   top: 0;
+  /* margin-left: -16px; */
 }
 .pie-wrapper .pie .half-circle {
-  height: 100%;
-  width: 100%;
+  height: 50px;
+  width: 50px;
   border: 0.15em solid #3498db;
   border-radius: 50%;
   clip: rect(0, 25px, 50px, 0);
@@ -387,8 +403,8 @@ body {
   vertical-align: super;
 }
 .pie-wrapper .shadow {
-  height: 100%;
-  width: 100%;
+  height: 50px;
+  width: 50px;
   border: 0.15em solid black;
   border-radius: 50%;
 }
@@ -803,10 +819,12 @@ h5 {
   outline: none;
   color: black;
 }
+
 .form .text-input:placeholder,
 .form .textarea:placeholder {
   color: rgba(0, 0, 0, 0.7);
 }
+
 .form .text-input:-webkit-autofill,
 .form .textarea:-webkit-autofill {
   box-shadow: 0 0 0px 1000px white inset;
@@ -814,6 +832,7 @@ h5 {
   border-left-color: white;
   border-right-color: white;
 }
+
 .form .error.text-input,
 .form .error.textarea,
 .error .form .text-input,
@@ -822,6 +841,7 @@ h5 {
 .form .error .textarea {
   border-color: transparent transparent red transparent;
 }
+
 .form:not(.has-floated-label) .text-input:active,
 .form:not(.has-floated-label) .textarea:active,
 .form:not(.has-floated-label) .text-input:focus,
@@ -842,6 +862,7 @@ h5 {
   color: rgba(0, 0, 0, 0.7);
   transition: color 0.3s;
 }
+
 .active .form .label,
 .form .active .label {
   font-size: 0.75em;
@@ -852,6 +873,7 @@ h5 {
   color: rgba(0, 0, 0, 0.7);
   background: white;
 }
+
 .focus .form .label,
 .form .focus .label {
   color: black;
@@ -881,12 +903,14 @@ h5 {
   text-align: center;
   letter-spacing: 0.14286em;
 }
+
 .form .button:hover,
 .form .button:focus,
 .form .button:active {
   color: white;
   background: black;
 }
+
 .form .button:active {
   position: relative;
   top: 1px;
@@ -900,6 +924,7 @@ h5 {
   box-sizing: border-box;
   overflow: hidden;
 }
+
 .form .field {
   position: relative;
   width: 100%;
@@ -924,14 +949,6 @@ textarea:valid + label {
   transform: translateY(-27px);
 }
 
-/* {
-  transform: translateY(-27px);
-} */
-
-/* .field:nth-child(3) input {
-  background-color: red;
-} */
-
 @media screen and (min-width: 40em) {
   .form .field.half {
     width: calc(50% - 2em);
@@ -949,27 +966,6 @@ textarea:valid + label {
 .form .textarea {
   max-width: 100%;
 }
-
-/* .field {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-} */
-
-/* .field input {
-  width: 350px;
-  padding: 8px 0;
-  border: none;
-  transition: 300ms ease;
-} */
-
-/* .field label {
-  position: absolute;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  transition: 300ms ease;
-} */
 
 .action-arrow-icon {
   z-index: 1;
@@ -1052,4 +1048,31 @@ textarea:valid + label {
 
 .about-me-text div p {
   font-size: 18px;
+}
+
+.mobile-display {
+  display: inline-flex;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .mobile-display {
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }

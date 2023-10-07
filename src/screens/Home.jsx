@@ -65,7 +65,7 @@ const Home = () => {
           {/* textarea */}
           {/* <i className="fa-solid fa-grip gallery-grid"></i> */}
         </div>
-        <div className="social-icons">
+        <div className="social-icons mobile-display">
           {/* <div className="circle-border mx-3">
             <div className="circle-border-img">
               <img src={GridIcon} alt="view gallery" className="gallery-grid" />
