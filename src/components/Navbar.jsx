@@ -17,10 +17,13 @@ const Navbar = () => {
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+        ></button>
+        {/* <input type="checkbox" id="check" />
+        <label htmlFor="check" className="menuBtn">
+          <i className="fas fa-bars"></i>
+        </label> */}
         <div className="collapse navbar-collapse" id="navbarNav">
+          {/* <button className="close-menu">Close</button> */}
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <a href="/" className="nav-link">

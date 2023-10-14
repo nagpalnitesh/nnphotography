@@ -75,15 +75,15 @@ const Footer = () => {
         </div>
         <div className="copyright">
           <div className="copyright-text">
-            Designed by{" "}
-            <a
+            Designed by <b>NITESH NAGPAL</b>
+            {/* <a
               href="/"
               target="_blank"
               rel="noreferrer"
               className="footer-link w-inline-block"
             >
               Pixxmo Online Services Pvt. Ltd.
-            </a>
+            </a> */}
           </div>
           <div className="footer-line-separator">|</div>
           <div className="copyright-text">All Rights Reserved</div>
