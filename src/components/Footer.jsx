@@ -75,7 +75,9 @@ const Footer = () => {
         </div>
         <div className="copyright">
           <div className="copyright-text">
-            Designed by <b>NITESH NAGPAL</b>
+            <p>
+              Designed by <b>NITESH NAGPAL</b>
+            </p>
             {/* <a
               href="/"
               target="_blank"
@@ -86,10 +88,12 @@ const Footer = () => {
             </a> */}
           </div>
           <div className="footer-line-separator">|</div>
-          <div className="copyright-text">All Rights Reserved</div>
+          <div className="copyright-text">
+            <p>All Rights Reserved</p>
+          </div>
           <div className="footer-line-separator">|</div>
           <div className="copyright-text">
-            Copyright &copy; {d.getFullYear()}
+            <p>Copyright &copy; {d.getFullYear()}</p>
           </div>
           {/* <a href="/" target="_blank" className="footer-link w-inline-block">
             Pixxmo Online Services Pvt. Ltd.
