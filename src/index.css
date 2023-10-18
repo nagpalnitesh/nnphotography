@@ -1199,6 +1199,10 @@ textarea:valid + label {
   .mobile-display {
     display: none;
   }
+
+  .main-dot-separator {
+    padding: 0 7px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
