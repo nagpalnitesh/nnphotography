@@ -95,7 +95,7 @@ const Gallery = () => {
             </div>
           </div>
           <div className="gallery-list-item">
-            <a href="/" className="gallery-card w-inline-block">
+            <div className="gallery-card w-inline-block">
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
@@ -110,10 +110,10 @@ const Gallery = () => {
                   className="gallery-card-img"
                 ></div>
               </div>
-            </a>
+            </div>
           </div>
           <div className="gallery-list-item">
-            <a href="/" className="gallery-card w-inline-block">
+            <div className="gallery-card w-inline-block">
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
@@ -128,10 +128,10 @@ const Gallery = () => {
                   className="gallery-card-img"
                 ></div>
               </div>
-            </a>
+            </div>
           </div>
           <div className="gallery-list-item">
-            <a href="/" className="gallery-card w-inline-block">
+            <div className="gallery-card w-inline-block">
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
@@ -146,10 +146,10 @@ const Gallery = () => {
                   className="gallery-card-img"
                 ></div>
               </div>
-            </a>
+            </div>
           </div>
           <div className="gallery-list-item">
-            <a href="/" className="gallery-card w-inline-block">
+            <div className="gallery-card w-inline-block">
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
@@ -164,10 +164,10 @@ const Gallery = () => {
                   className="gallery-card-img"
                 ></div>
               </div>
-            </a>
+            </div>
           </div>
           <div className="gallery-list-item">
-            <a href="/" className="gallery-card w-inline-block">
+            <div className="gallery-card w-inline-block">
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
@@ -182,10 +182,10 @@ const Gallery = () => {
                   className="gallery-card-img"
                 ></div>
               </div>
-            </a>
+            </div>
           </div>
           <div className="gallery-list-item">
-            <a href="/" className="gallery-card w-inline-block">
+            <div className="gallery-card w-inline-block">
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
@@ -200,10 +200,10 @@ const Gallery = () => {
                   className="gallery-card-img"
                 ></div>
               </div>
-            </a>
+            </div>
           </div>
           <div className="gallery-list-item">
-            <a href="/" className="gallery-card w-inline-block">
+            <div className="gallery-card w-inline-block">
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
@@ -218,10 +218,10 @@ const Gallery = () => {
                   className="gallery-card-img"
                 ></div>
               </div>
-            </a>
+            </div>
           </div>
           <div className="gallery-list-item">
-            <a href="/" className="gallery-card w-inline-block">
+            <div className="gallery-card w-inline-block">
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
@@ -236,10 +236,10 @@ const Gallery = () => {
                   className="gallery-card-img"
                 ></div>
               </div>
-            </a>
+            </div>
           </div>
           <div className="gallery-list-item">
-            <a href="/" className="gallery-card w-inline-block">
+            <div className="gallery-card w-inline-block">
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
@@ -254,10 +254,10 @@ const Gallery = () => {
                   className="gallery-card-img"
                 ></div>
               </div>
-            </a>
+            </div>
           </div>
           <div className="gallery-list-item">
-            <a href="/" className="gallery-card w-inline-block">
+            <div className="gallery-card w-inline-block">
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
@@ -272,10 +272,10 @@ const Gallery = () => {
                   className="gallery-card-img"
                 ></div>
               </div>
-            </a>
+            </div>
           </div>
           <div className="gallery-list-item">
-            <a href="/" className="gallery-card w-inline-block">
+            <div className="gallery-card w-inline-block">
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
@@ -290,10 +290,10 @@ const Gallery = () => {
                   className="gallery-card-img"
                 ></div>
               </div>
-            </a>
+            </div>
           </div>
           <div className="gallery-list-item">
-            <a href="/" className="gallery-card w-inline-block">
+            <div className="gallery-card w-inline-block">
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
@@ -308,10 +308,10 @@ const Gallery = () => {
                   className="gallery-card-img"
                 ></div>
               </div>
-            </a>
+            </div>
           </div>
           <div className="gallery-list-item">
-            <a href="/" className="gallery-card w-inline-block">
+            <div className="gallery-card w-inline-block">
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
@@ -326,10 +326,10 @@ const Gallery = () => {
                   className="gallery-card-img"
                 ></div>
               </div>
-            </a>
+            </div>
           </div>
           <div className="gallery-list-item">
-            <a href="/" className="gallery-card w-inline-block">
+            <div className="gallery-card w-inline-block">
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
@@ -344,10 +344,10 @@ const Gallery = () => {
                   className="gallery-card-img"
                 ></div>
               </div>
-            </a>
+            </div>
           </div>
           <div className="gallery-list-item">
-            <a href="/" className="gallery-card w-inline-block">
+            <div className="gallery-card w-inline-block">
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
@@ -362,10 +362,10 @@ const Gallery = () => {
                   className="gallery-card-img"
                 ></div>
               </div>
-            </a>
+            </div>
           </div>
           <div className="gallery-list-item">
-            <a href="/" className="gallery-card w-inline-block">
+            <div className="gallery-card w-inline-block">
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
@@ -380,10 +380,10 @@ const Gallery = () => {
                   className="gallery-card-img"
                 ></div>
               </div>
-            </a>
+            </div>
           </div>
           <div className="gallery-list-item">
-            <a href="/" className="gallery-card w-inline-block">
+            <div className="gallery-card w-inline-block">
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
@@ -398,10 +398,10 @@ const Gallery = () => {
                   className="gallery-card-img"
                 ></div>
               </div>
-            </a>
+            </div>
           </div>
           <div className="gallery-list-item">
-            <a href="/" className="gallery-card w-inline-block">
+            <div className="gallery-card w-inline-block">
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
@@ -416,10 +416,10 @@ const Gallery = () => {
                   className="gallery-card-img"
                 ></div>
               </div>
-            </a>
+            </div>
           </div>
           <div className="gallery-list-item">
-            <a href="/" className="gallery-card w-inline-block">
+            <div className="gallery-card w-inline-block">
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
@@ -434,10 +434,10 @@ const Gallery = () => {
                   className="gallery-card-img"
                 ></div>
               </div>
-            </a>
+            </div>
           </div>
           <div className="gallery-list-item">
-            <a href="/" className="gallery-card w-inline-block">
+            <div className="gallery-card w-inline-block">
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
@@ -452,10 +452,10 @@ const Gallery = () => {
                   className="gallery-card-img"
                 ></div>
               </div>
-            </a>
+            </div>
           </div>
           <div className="gallery-list-item">
-            <a href="/" className="gallery-card w-inline-block">
+            <div className="gallery-card w-inline-block">
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
@@ -470,10 +470,10 @@ const Gallery = () => {
                   className="gallery-card-img"
                 ></div>
               </div>
-            </a>
+            </div>
           </div>
           <div className="gallery-list-item">
-            <a href="/" className="gallery-card w-inline-block">
+            <div className="gallery-card w-inline-block">
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
@@ -488,10 +488,10 @@ const Gallery = () => {
                   className="gallery-card-img"
                 ></div>
               </div>
-            </a>
+            </div>
           </div>
           <div className="gallery-list-item">
-            <a href="/" className="gallery-card w-inline-block">
+            <div className="gallery-card w-inline-block">
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
@@ -506,10 +506,10 @@ const Gallery = () => {
                   className="gallery-card-img"
                 ></div>
               </div>
-            </a>
+            </div>
           </div>
           <div className="gallery-list-item">
-            <a href="/" className="gallery-card w-inline-block">
+            <div className="gallery-card w-inline-block">
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
@@ -524,10 +524,10 @@ const Gallery = () => {
                   className="gallery-card-img"
                 ></div>
               </div>
-            </a>
+            </div>
           </div>
           <div className="gallery-list-item">
-            <a href="/" className="gallery-card w-inline-block">
+            <div className="gallery-card w-inline-block">
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
@@ -542,10 +542,10 @@ const Gallery = () => {
                   className="gallery-card-img"
                 ></div>
               </div>
-            </a>
+            </div>
           </div>
           <div className="gallery-list-item">
-            <a href="/" className="gallery-card w-inline-block">
+            <div className="gallery-card w-inline-block">
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
@@ -560,10 +560,10 @@ const Gallery = () => {
                   className="gallery-card-img"
                 ></div>
               </div>
-            </a>
+            </div>
           </div>
           <div className="gallery-list-item">
-            <a href="/" className="gallery-card w-inline-block">
+            <div className="gallery-card w-inline-block">
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
@@ -578,10 +578,10 @@ const Gallery = () => {
                   className="gallery-card-img"
                 ></div>
               </div>
-            </a>
+            </div>
           </div>
           <div className="gallery-list-item">
-            <a href="/" className="gallery-card w-inline-block">
+            <div className="gallery-card w-inline-block">
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
@@ -596,10 +596,10 @@ const Gallery = () => {
                   className="gallery-card-img"
                 ></div>
               </div>
-            </a>
+            </div>
           </div>
           <div className="gallery-list-item">
-            <a href="/" className="gallery-card w-inline-block">
+            <div className="gallery-card w-inline-block">
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
@@ -614,7 +614,7 @@ const Gallery = () => {
                   className="gallery-card-img"
                 ></div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
         {/* CTA */}
