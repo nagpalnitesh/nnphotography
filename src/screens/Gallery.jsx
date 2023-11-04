@@ -37,7 +37,7 @@ const Gallery = () => {
           <Slider />
         </div> */}
       <div className="gallery">
-        <Navbar />
+        <Navbar activeMenu="Gallery" />
         {/* TODO: parallax background with overlay */}
         <div className="gallery-page-header">
           <PageHeader

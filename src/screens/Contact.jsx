@@ -62,11 +62,11 @@ const Contact = () => {
 
   return (
     <div className="gallery">
+      <Navbar activeMenu="Contact" />
       <div className="overlay"></div>
       <div className="banner">
         <img src={HeaderImg} alt="Background Image" />
       </div>
-      <Navbar />
       {/* TODO: parallax background with overlay */}
       <div className="gallery-page-header">
         <PageHeader

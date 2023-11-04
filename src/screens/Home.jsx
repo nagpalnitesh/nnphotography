@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className="home-slider">
       {/* Navbar */}
-      <Navbar />
+      <Navbar activeMenu="Home" />
       {/* Slider */}
       {/* <div className="overlay"></div> */}
       <div className="banner">

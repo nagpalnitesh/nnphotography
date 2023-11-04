@@ -10,12 +10,11 @@ import MyImg from "../assets/nitesh_nagpal.jpg";
 const About = () => {
   return (
     <div className="gallery">
+      <Navbar activeMenu="About" />
       <div className="overlay"></div>
       <div className="banner">
         <img src={HeaderImg} alt="Background" />
       </div>
-
-      <Navbar />
       {/* TODO: parallax background with overlay */}
       <div className="gallery-page-header">
         <PageHeader

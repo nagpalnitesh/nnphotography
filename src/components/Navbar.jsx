@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Logo from "../assets/Photography_Logo_W_crop.png";
 
-const Navbar = () => {
+const Navbar = ({ activeMenu }) => {
+  // const [activeMenu, setActiveMenu] = useState();
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg">
@@ -27,27 +29,55 @@ const Navbar = () => {
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <a href="/" className="nav-link">
-                Home
+                <div>Home</div>
+                <div
+                  className={`underline ${
+                    activeMenu === "Home" ? "active-menu" : "nav-link-underline"
+                  }`}
+                ></div>
               </a>
             </li>
             <li className="nav-item">
               <a href="/gallery" className="nav-link">
-                Gallery
+                <div>Gallery</div>
+                <div
+                  className={`underline  ${
+                    activeMenu === "Gallery"
+                      ? "active-menu"
+                      : "nav-link-underline"
+                  }`}
+                ></div>
               </a>
             </li>
             {/* <li className="nav-item">
               <a href="#" className="nav-link">
                 Prints
+
+                <div className="underline nav-link-underline"></div>
               </a>
             </li> */}
             <li className="nav-item">
               <a href="/about-me" className="nav-link">
-                About Me
+                <div>About Me</div>
+                <div
+                  className={`underline  ${
+                    activeMenu === "About"
+                      ? "active-menu"
+                      : "nav-link-underline"
+                  }`}
+                ></div>
               </a>
             </li>
             <li className="nav-item">
               <a href="/contact-me" className="nav-link">
-                Contact Me
+                <div>Contact Me</div>
+                <div
+                  className={`underline  ${
+                    activeMenu === "Contact"
+                      ? "active-menu"
+                      : "nav-link-underline"
+                  }`}
+                ></div>
               </a>
             </li>
           </ul>
