@@ -80,7 +80,7 @@ const Gallery = () => {
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
                   onClick={toggleFullscreen}
-                  // onClick={fullView(HeaderImg)}
+                  //onClick={fullView(HeaderImg)}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -99,6 +99,7 @@ const Gallery = () => {
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
+                  onClick={toggleFullscreen}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -116,6 +117,7 @@ const Gallery = () => {
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
+                  onClick={toggleFullscreen}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -133,6 +135,7 @@ const Gallery = () => {
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
+                  onClick={toggleFullscreen}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -150,6 +153,7 @@ const Gallery = () => {
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
+                  onClick={toggleFullscreen}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -167,6 +171,7 @@ const Gallery = () => {
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
+                  onClick={toggleFullscreen}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -184,6 +189,7 @@ const Gallery = () => {
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
+                  onClick={toggleFullscreen}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -201,6 +207,7 @@ const Gallery = () => {
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
+                  onClick={toggleFullscreen}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -218,6 +225,7 @@ const Gallery = () => {
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
+                  onClick={toggleFullscreen}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -235,6 +243,7 @@ const Gallery = () => {
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
+                  onClick={toggleFullscreen}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -252,6 +261,7 @@ const Gallery = () => {
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
+                  onClick={toggleFullscreen}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -269,6 +279,7 @@ const Gallery = () => {
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
+                  onClick={toggleFullscreen}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -286,6 +297,7 @@ const Gallery = () => {
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
+                  onClick={toggleFullscreen}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -303,6 +315,7 @@ const Gallery = () => {
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
+                  onClick={toggleFullscreen}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -320,6 +333,7 @@ const Gallery = () => {
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
+                  onClick={toggleFullscreen}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -337,6 +351,7 @@ const Gallery = () => {
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
+                  onClick={toggleFullscreen}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -354,6 +369,7 @@ const Gallery = () => {
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
+                  onClick={toggleFullscreen}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -371,6 +387,7 @@ const Gallery = () => {
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
+                  onClick={toggleFullscreen}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -388,6 +405,7 @@ const Gallery = () => {
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
+                  onClick={toggleFullscreen}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -405,6 +423,7 @@ const Gallery = () => {
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
+                  onClick={toggleFullscreen}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -422,6 +441,7 @@ const Gallery = () => {
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
+                  onClick={toggleFullscreen}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -439,6 +459,7 @@ const Gallery = () => {
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
+                  onClick={toggleFullscreen}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -456,6 +477,7 @@ const Gallery = () => {
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
+                  onClick={toggleFullscreen}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -473,6 +495,7 @@ const Gallery = () => {
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
+                  onClick={toggleFullscreen}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -490,6 +513,7 @@ const Gallery = () => {
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
+                  onClick={toggleFullscreen}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -507,6 +531,7 @@ const Gallery = () => {
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
+                  onClick={toggleFullscreen}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -524,6 +549,7 @@ const Gallery = () => {
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
+                  onClick={toggleFullscreen}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -541,6 +567,7 @@ const Gallery = () => {
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
+                  onClick={toggleFullscreen}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -558,6 +585,7 @@ const Gallery = () => {
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
+                  onClick={toggleFullscreen}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -575,6 +603,7 @@ const Gallery = () => {
               <div className="card-img-container">
                 {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
                 <div
+                  onClick={toggleFullscreen}
                   style={{
                     backgroundImage: `url(${HeaderImg})`,
                     transformStyle: "preserve-3d",
@@ -592,7 +621,9 @@ const Gallery = () => {
         <div className="call-to-action">
           <a
             href="/contact-me"
-            className="action-block w-inline-block"
+            cl
+            onClick={toggleFullscreen}
+            assName="action-block w-inline-block"
             style={{
               backgroundImage: `url(${HeaderImg2})`,
               transformStyle: "preserve-3d",
@@ -608,13 +639,16 @@ const Gallery = () => {
             <img
               src={LeftArrowIcon}
               className="action-arrow-icon action-arrow left-arrow"
-              alt="arrow-icon"
+              alt="
+                  onClick={toggleFullscreen}arrow-icon"
               // style={{ transform: "rotate(-180deg)" }}
             />
           </a>
           <a
             href="/about-me"
-            className="action-block w-inline-block"
+            cl
+            onClick={toggleFullscreen}
+            assName="action-block w-inline-block"
             style={{
               backgroundImage: `url(${HeaderImg})`,
               transformStyle: "preserve-3d",
