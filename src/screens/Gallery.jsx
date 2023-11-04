@@ -621,9 +621,7 @@ const Gallery = () => {
         <div className="call-to-action">
           <a
             href="/contact-me"
-            cl
-            onClick={toggleFullscreen}
-            assName="action-block w-inline-block"
+            className="action-block w-inline-block"
             style={{
               backgroundImage: `url(${HeaderImg2})`,
               transformStyle: "preserve-3d",
@@ -646,9 +644,7 @@ const Gallery = () => {
           </a>
           <a
             href="/about-me"
-            cl
-            onClick={toggleFullscreen}
-            assName="action-block w-inline-block"
+            className="action-block w-inline-block"
             style={{
               backgroundImage: `url(${HeaderImg})`,
               transformStyle: "preserve-3d",
