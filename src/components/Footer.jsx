@@ -16,12 +16,12 @@ const Footer = () => {
             <div>•</div>
           </div>
           <a
-            href="https://www.facebook.com/nnphotography09"
+            href="https://youpic.com/photographer/NN_Photography/"
             className="footer-social-link w-inline-bock"
             target="_blank"
             rel="noreferrer"
           >
-            <div>Facebook</div>
+            <div>Youpic</div>
             <div className="underline footer-social-underline"></div>
           </a>
           <div className="dot-separator main-dot-separator w-hidden-tiny ">
@@ -40,24 +40,24 @@ const Footer = () => {
             <div>•</div>
           </div>
           <a
-            href="https://twitter.com/_niteshnagpal_"
+            href="https://www.facebook.com/nnphotography09"
             className="footer-social-link w-inline-bock"
             target="_blank"
             rel="noreferrer"
           >
-            <div>Twitter</div>
+            <div>Facebook</div>
             <div className="underline footer-social-underline"></div>
           </a>
           <div className="dot-separator main-dot-separator w-hidden-tiny ">
             <div>•</div>
           </div>
           <a
-            href="https://youpic.com/photographer/NN_Photography/"
+            href="https://twitter.com/_niteshnagpal_"
             className="footer-social-link w-inline-bock"
             target="_blank"
             rel="noreferrer"
           >
-            <div>Youpic</div>
+            <div>Twitter</div>
             <div className="underline footer-social-underline"></div>
           </a>
           <div className="dot-separator main-dot-separator w-hidden-tiny ">

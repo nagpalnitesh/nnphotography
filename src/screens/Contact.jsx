@@ -90,15 +90,13 @@ const Contact = () => {
 
       {/* Contact Details */}
       <div className="contact-details">
-        <div className="copyright-text">
+        <div className="e-text">
           Email:{" "}
           <a
-            href="mailto:niteshnagpal@outlook.com"
+            href="mailto:niteshnagpalphotography@gmail.com"
             className="footer-social-link w-inline-bock "
           >
-            <div>
-              <b>niteshnagpal@outlook.com</b>
-            </div>
+            <div className="email-text">niteshnagpalphotography@gmail.com</div>
             <div className="underline footer-social-underline"></div>
           </a>
         </div>

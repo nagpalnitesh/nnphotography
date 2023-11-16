@@ -120,6 +120,18 @@ p {
   height: 5px;
 }
 
+.email-text {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.e-text {
+  color: black;
+  font-size: 16px;
+  /* margin: 0 10px; */
+  font-family: "Lora", serif;
+}
+
 .nav-link:hover .nav-link-underline {
   animation: displayUnderline 250ms linear forwards;
 }

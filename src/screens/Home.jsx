@@ -71,6 +71,50 @@ const Home = () => {
               <img src={GridIcon} alt="view gallery" className="gallery-grid" />
             </div>
           </div> */}
+          {/* Youpic */}
+          <a
+            href="https://youpic.com/photographer/NN_Photography/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="pie-wrapper progress-45 style-2 mx-3">
+              <span className="label">
+                <img
+                  src={YoupicIcon}
+                  alt="view gallery"
+                  className="youpic-img social-icon-img"
+                />
+                {/* <i class="fa-brands fa-facebook-f social-icon-img"></i> */}
+              </span>
+              <div className="pie">
+                <div className="left-side half-circle"></div>
+                <div className="right-side half-circle"></div>
+              </div>
+              <div className="shadow"></div>
+            </div>
+          </a>
+          {/* Instagram */}
+          <a
+            href="https://www.instagram.com/__nnphotography__/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="pie-wrapper progress-45 style-2 mx-3">
+              <span className="label">
+                {/* <img
+                src={GridIcon}
+                alt="view gallery"
+                className="social-icon-img"
+              /> */}
+                <i class="fa-brands fa-instagram social-icon-img"></i>
+              </span>
+              <div className="pie">
+                <div className="left-side half-circle"></div>
+                <div className="right-side half-circle"></div>
+              </div>
+              <div className="shadow"></div>
+            </div>
+          </a>
           {/* Facebook */}
           <a
             href="https://www.facebook.com/nnphotography09"
@@ -108,50 +152,6 @@ const Home = () => {
               /> */}
                 {/* <i class="fa-brands fa-twitter"></i> */}
                 <i class="fa-brands  fa-twitter social-icon-img"></i>
-              </span>
-              <div className="pie">
-                <div className="left-side half-circle"></div>
-                <div className="right-side half-circle"></div>
-              </div>
-              <div className="shadow"></div>
-            </div>
-          </a>
-          {/* Youpic */}
-          <a
-            href="https://youpic.com/photographer/NN_Photography/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className="pie-wrapper progress-45 style-2 mx-3">
-              <span className="label">
-                <img
-                  src={YoupicIcon}
-                  alt="view gallery"
-                  className="youpic-img social-icon-img"
-                />
-                {/* <i class="fa-brands fa-facebook-f social-icon-img"></i> */}
-              </span>
-              <div className="pie">
-                <div className="left-side half-circle"></div>
-                <div className="right-side half-circle"></div>
-              </div>
-              <div className="shadow"></div>
-            </div>
-          </a>
-          {/* Instagram */}
-          <a
-            href="https://www.instagram.com/__nnphotography__/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className="pie-wrapper progress-45 style-2 mx-3">
-              <span className="label">
-                {/* <img
-                src={GridIcon}
-                alt="view gallery"
-                className="social-icon-img"
-              /> */}
-                <i class="fa-brands fa-instagram social-icon-img"></i>
               </span>
               <div className="pie">
                 <div className="left-side half-circle"></div>
