@@ -10,10 +10,13 @@ import "swiper/css/effect-fade";
 // import required modules
 import { Autoplay, Pagination, EffectFade } from "swiper/modules";
 
-import SlideImg1 from "../assets/images/DSC_1889.jpeg";
-import SlideImg2 from "../assets/images/DSC_2725.jpeg";
-import SlideImg3 from "../assets/images/DSC_E0582.jpeg";
-// import SlideImg4 from "../assets/images/DSC_9225.jpg ";
+// import SlideImg1 from "../assets/nnphotography/DSC_1832.jpeg";
+import SlideImg2 from "../assets/nnphotography/DSC_1889(1).jpeg";
+import SlideImg3 from "../assets/nnphotography/DSC_3165.jpeg";
+import SlideImg4 from "../assets/nnphotography/DSC_2725.jpeg";
+import SlideImg5 from "../assets/nnphotography/DSC_3421.jpeg";
+import SlideImg6 from "../assets/nnphotography/DSC_E0582.jpeg";
+import SlideImg7 from "../assets/nnphotography/DSC_9326.jpeg";
 
 const Slider = () => {
   return (
@@ -35,17 +38,23 @@ const Slider = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src={SlideImg1} />
+          <img src={SlideImg3} />
         </SwiperSlide>
         <SwiperSlide>
           <img src={SlideImg2} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={SlideImg3} />
-        </SwiperSlide>
-        {/* <SwiperSlide>
           <img src={SlideImg4} />
-        </SwiperSlide> */}
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={SlideImg5} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={SlideImg6} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={SlideImg7} />
+        </SwiperSlide>
       </Swiper>
     </>
   );
