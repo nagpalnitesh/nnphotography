@@ -11,7 +11,7 @@ import "swiper/css/effect-fade";
 import { Autoplay, Pagination, EffectFade } from "swiper/modules";
 
 // import SlideImg1 from "../assets/nnphotography/DSC_1832.jpeg";
-import SlideImg2 from "../assets/nnphotography/DSC_1889(1).jpeg";
+import SlideImg2 from "../assets/nnphotography/DSC_18891.jpeg";
 import SlideImg3 from "../assets/nnphotography/DSC_3165.jpeg";
 import SlideImg4 from "../assets/nnphotography/DSC_2725.jpeg";
 import SlideImg5 from "../assets/nnphotography/DSC_3421.jpeg";

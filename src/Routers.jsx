@@ -17,6 +17,7 @@ const Routers = () => {
               <Routes>
                 {/* Home */}
                 <Route exact path="/" element={<Home />} />
+                <Route exact path="*" element={<Home />} />
                 {/* Gallery */}
                 <Route exact path="/gallery" element={<Gallery />} />
                 {/* About Me */}
