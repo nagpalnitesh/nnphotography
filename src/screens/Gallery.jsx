@@ -17,6 +17,7 @@ const ImageList = Images.keys().map((image) => Images(image));
 
 const Gallery = () => {
   const [isFullScreen, setIsFullScreen] = useState(false);
+  const [imageSet, setImage] = useState();
 
   const toggleFullscreen = () => {
     setIsFullScreen(!isFullScreen);
@@ -65,14 +66,13 @@ const Gallery = () => {
           <p>A Gallery of Timeless Memories</p>
           <hr />
         </div>
-
         {/* Display Image in FullView */}
         <div
           className={`fullscreenImageView ${
             isFullScreen ? "fullscreen-image" : "no-image"
           }`}
         >
-          <img src={HeaderImg} alt="" />
+          <img src={imageSet} alt="" />
           <span className="closeButton" onClick={toggleFullscreen}>
             &times;
           </span>
@@ -82,24 +82,31 @@ const Gallery = () => {
           {/* Gallery Cards */}
           {ImageList &&
             ImageList.map((image) => (
-              <div className="gallery-list-item">
-                <div className="gallery-card w-inline-block">
-                  <div className="card-img-container">
-                    {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
-                    <div
-                      onClick={toggleFullscreen}
-                      style={{
-                        backgroundImage: `url(${image})`,
-                        transformStyle: "preserve-3d",
-                        opacity: "1",
-                        transform:
-                          "translate3d(0px, 0px, 0px) scale3d(1.08, 1.08, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                      }}
-                      className="gallery-card-img"
-                    ></div>
+              <>
+                <div className="gallery-list-item">
+                  <div className="gallery-card w-inline-block">
+                    <div className="card-img-container">
+                      {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
+                      <div
+                        onClick={() => {
+                          setImage(image);
+                          toggleFullscreen();
+                        }}
+                        style={{
+                          backgroundImage: `url(${image})`,
+                          transformStyle: "preserve-3d",
+                          opacity: "1",
+                          backgroundPositionY: 0,
+                          backgroundRepeat: "no-repeat",
+                          transform:
+                            "translate3d(0px, 0px, 0px) scale3d(1.08, 1.08, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                        }}
+                        className="gallery-card-img"
+                      ></div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </>
             ))}
         </div>
         {/* CTA */}
