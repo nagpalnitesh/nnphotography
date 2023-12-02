@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 
 import Logo from "../assets/Photography_Logo_W_crop.png";
 
 const Navbar = ({ activeMenu }) => {
-  // const [activeMenu, setActiveMenu] = useState();
-
   return (
     <div>
       <nav className="navbar navbar-expand-lg">
