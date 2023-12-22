@@ -1291,6 +1291,15 @@ textarea:valid + label {
   .gallery-card-img {
     width: 100%;
   }
+
+  .fullscreenImageView img {
+    max-width: 90%;
+  }
+
+  .closeButton {
+    top: 1%;
+    right: 5%;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
