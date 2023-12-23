@@ -1308,6 +1308,27 @@ textarea:valid + label {
   .copyright-text {
     font-size: 10px;
   }
+  .about-me {
+    flex-direction: column;
+  }
+
+  .my-photo {
+    width: 100%;
+  }
+
+  .my-photo img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .about-me-text {
+    width: 100%;
+  }
+
+  .about-me-text div {
+    width: 100%;
+    padding: 10px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

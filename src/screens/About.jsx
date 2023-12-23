@@ -37,6 +37,9 @@ const About = () => {
       </div>
       {/* About Me */}
       <div className="about-me">
+        <div className="my-photo">
+          <img src={MyImg} alt="Nitesh Nagpal" />
+        </div>
         <div className="about-me-text">
           <div>
             <p>
@@ -69,9 +72,6 @@ const About = () => {
             <p>Warm regards,</p>
             <p>Nitesh Nagpal</p>
           </div>
-        </div>
-        <div className="my-photo">
-          <img src={MyImg} alt="Nitesh Nagpal" />
         </div>
       </div>
       {/* FOOTER */}
