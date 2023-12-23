@@ -1268,7 +1268,7 @@ textarea:valid + label {
     height: 200px;
   }
   .gallery-header-text {
-    font-size: 40px;
+    font-size: 20px;
     /* margin: 0 2.5%; */
     width: 100%;
   }
