@@ -1299,6 +1299,15 @@ textarea:valid + label {
     top: 1%;
     right: 5%;
   }
+  .copyright {
+    margin-bottom: 0px;
+    /* text-transform: uppercase; */
+    /* flex-direction: column; */
+  }
+
+  .copyright-text {
+    font-size: 10px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
