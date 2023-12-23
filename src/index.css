@@ -765,7 +765,6 @@ a:hover {
 
 .gallery-section-text {
   margin: 11% 0 0 0;
-  /* background-color: red; */
   text-align: center;
   letter-spacing: 0.5em;
   font-size: 24px;
@@ -1270,10 +1269,10 @@ textarea:valid + label {
   }
   .gallery-header-text {
     font-size: 40px;
-    margin: 0 2.5%;
+    /* margin: 0 2.5%; */
+    width: 100%;
   }
   .gallery-section {
-    /* background-color: red; */
     /* margin-top: 10px; */
     display: flex;
     /* margin-bottom: 20px; */
