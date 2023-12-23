@@ -46,6 +46,10 @@ const Gallery = () => {
       <div className="gallery">
         <Navbar activeMenu="Gallery" />
         {/* TODO: parallax background with overlay */}
+        <div className="overlay"></div>
+        <div className="banner">
+          <img src={HeaderImg} alt="Background" />
+        </div>
         <div className="gallery-page-header">
           <PageHeader
             pageName={"Gallery"}
