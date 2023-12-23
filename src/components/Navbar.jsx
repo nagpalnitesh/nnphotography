@@ -10,14 +10,16 @@ const Navbar = ({ activeMenu }) => {
           <img src={Logo} alt="nn photography" className="logo-navbar" />
         </a>
         <button
-          className="navbar-toggler"
+          className="btn navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
-        ></button>
+        >
+          <i className="fas fa-bars"></i>
+        </button>
         {/* <input type="checkbox" id="check" />
         <label htmlFor="check" className="menuBtn">
           <i className="fas fa-bars"></i>

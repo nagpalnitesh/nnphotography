@@ -1247,6 +1247,11 @@ textarea:valid + label {
   position: fixed;
 }
 
+.fa-bars {
+  color: var(--whiteColor);
+  font-size: 24px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .mobile-display {
