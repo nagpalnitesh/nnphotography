@@ -16,7 +16,7 @@ import SlideImg3 from "../assets/nnphotography/DSC_3165.jpeg";
 import SlideImg4 from "../assets/nnphotography/DSC_2725.jpeg";
 import SlideImg5 from "../assets/nnphotography/DSC_3421.jpeg";
 import SlideImg6 from "../assets/nnphotography/DSC_E0582.jpeg";
-import SlideImg7 from "../assets/nnphotography/DSC_9326.jpeg";
+// import SlideImg7 from "../assets/nnphotography/DSC_9326.jpeg";
 
 const Slider = () => {
   return (
@@ -52,9 +52,9 @@ const Slider = () => {
         <SwiperSlide>
           <img src={SlideImg6} />
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <img src={SlideImg7} />
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </>
   );
