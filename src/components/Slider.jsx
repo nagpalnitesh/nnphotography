@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -38,22 +38,22 @@ const Slider = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src={SlideImg3} />
+          <img src={SlideImg3} alt={"Frog"} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={SlideImg2} />
+          <img src={SlideImg2} alt={"Monkey"} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={SlideImg4} />
+          <img src={SlideImg4} alt={"Tiger"} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={SlideImg5} />
+          <img src={SlideImg5} alt={"Rose Pelican"} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={SlideImg6} />
+          <img src={SlideImg6} alt={"Rose Pelican Swim"} />
         </SwiperSlide>
         {/* <SwiperSlide>
-          <img src={SlideImg7} />
+          <img src={SlideImg7} alt={''} />
         </SwiperSlide> */}
       </Swiper>
     </>
