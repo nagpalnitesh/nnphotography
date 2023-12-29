@@ -53,7 +53,7 @@ const Slider = () => {
           <img src={SlideImg6} alt={"Rose Pelican Swim"} />
         </SwiperSlide>
         {/* <SwiperSlide>
-          <img src={SlideImg7} alt={''} />
+          <img src={SlideImg7} alt={"Tiger Watch"} />
         </SwiperSlide> */}
       </Swiper>
     </>
