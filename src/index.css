@@ -1161,7 +1161,7 @@ textarea:valid + label {
   flex-direction: column;
   -webkit-box-pack: center;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
 }
 
 .my-photo img {
