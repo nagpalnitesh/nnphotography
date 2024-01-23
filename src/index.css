@@ -761,6 +761,7 @@ a:hover {
   padding: 90px 0 0 0;
   color: white;
   font-family: "Cinzel", serif;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .gallery-section-text {
@@ -845,6 +846,10 @@ a:hover {
   text-decoration: none;
   height: 400px;
   color: #fff;
+}
+
+.action-block:hover {
+  color: var(--whiteColor);
 }
 
 .action-text {

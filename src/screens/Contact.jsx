@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 
-import HeaderImg from "../assets/images/nature-1.jpg";
-// import HeaderImg2 from "../assets/images/nature-2.jpg";
+import HeaderImg from "../assets/images/DSC_2725.jpeg";
+import HeaderImg2 from "../assets/images/DSC_9885.jpg";
 import PageHeader from "../components/PageHeader";
 import Footer from "../components/Footer";
 
@@ -65,14 +65,14 @@ const Contact = () => {
       <Navbar activeMenu="Contact" />
       <div className="overlay"></div>
       <div className="banner">
-        <img src={HeaderImg} alt="Background Image" />
+        <img src={HeaderImg} alt="Backgrounds" />
       </div>
       {/* TODO: parallax background with overlay */}
       <div className="gallery-page-header">
         <PageHeader
           pageName={"Contact Me"}
           // headerStyle={"gallery-header-img"}
-          headerImg={HeaderImg}
+          headerImg={HeaderImg2}
         />
       </div>
       {/* <div className="gallery-header">

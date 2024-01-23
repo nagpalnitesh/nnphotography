@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 
-import HeaderImg from "../assets/images/nature-1.jpg";
-import HeaderImg2 from "../assets/images/nature-2.jpg";
+import HeaderImg from "../assets/images/DSC_2725.jpeg";
+import HeaderImg2 from "../assets/images/DSC_9885.jpg";
+import HeaderImg3 from "../assets/images/DSC_9634.jpg";
 import ArrowIcon from "../assets/icons/arrow-90.png";
 import LeftArrowIcon from "../assets/icons/left-arrow-90.png";
 import PageHeader from "../components/PageHeader";
@@ -119,11 +120,14 @@ const Gallery = () => {
             href="/contact-me"
             className="action-block w-inline-block"
             style={{
-              backgroundImage: `url(${HeaderImg2})`,
+              backgroundImage: `url(${HeaderImg3})`,
               transformStyle: "preserve-3d",
               opacity: "1",
               transform:
                 "translate3d(0px, 0px, 0px) scale3d(1.08, 1.08, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+              backgroundPositionY: "35%",
             }}
           >
             <div className="action-text action-text-style">
@@ -147,6 +151,9 @@ const Gallery = () => {
               opacity: "1",
               transform:
                 "translate3d(0px, 0px, 0px) scale3d(1.08, 1.08, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+              backgroundPositionY: "25%",
             }}
           >
             <div className="action-text action-text-style">

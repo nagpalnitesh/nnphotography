@@ -9,6 +9,9 @@ const PageHeader = ({ pageName, headerImg }) => {
           className="gallery-header-img"
           style={{
             backgroundImage: `url(${headerImg})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPositionY: "55%",
           }}
         >
           {/* <img src={HeaderImg} alt="" /> */}
