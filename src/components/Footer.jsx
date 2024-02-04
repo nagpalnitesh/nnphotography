@@ -76,7 +76,7 @@ const Footer = () => {
         <div className="copyright">
           <div className="copyright-text">
             <p>
-              Designed by <b>NITESH NAGPAL</b>
+              Developed by <b>NITESH NAGPAL</b>
             </p>
             {/* <a
               href="/"
