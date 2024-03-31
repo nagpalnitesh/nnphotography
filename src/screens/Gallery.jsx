@@ -104,28 +104,26 @@ const Gallery = () => {
           {images &&
             images.map((image, index) => {
               return (
-                <div key={index}>
-                  <div className="gallery-list-item">
-                    <div className="gallery-card w-inline-block">
-                      <div className="card-img-container">
-                        {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
-                        <div
-                          onClick={() => {
-                            setImage(image.url);
-                            toggleFullscreen();
-                          }}
-                          style={{
-                            backgroundImage: `url(${image.url})`,
-                            transformStyle: "preserve-3d",
-                            opacity: "1",
-                            backgroundPositionY: 0,
-                            backgroundRepeat: "no-repeat",
-                            transform:
-                              "translate3d(0px, 0px, 0px) scale3d(1.08, 1.08, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          }}
-                          className="gallery-card-img"
-                        ></div>
-                      </div>
+                <div className="gallery-list-item" key={index}>
+                  <div className="gallery-card w-inline-block">
+                    <div className="card-img-container">
+                      {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
+                      <div
+                        onClick={() => {
+                          setImage(image.url);
+                          toggleFullscreen();
+                        }}
+                        style={{
+                          backgroundImage: `url(${image.url})`,
+                          transformStyle: "preserve-3d",
+                          opacity: "1",
+                          backgroundPositionY: 0,
+                          backgroundRepeat: "no-repeat",
+                          transform:
+                            "translate3d(0px, 0px, 0px) scale3d(1.08, 1.08, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                        }}
+                        className="gallery-card-img"
+                      ></div>
                     </div>
                   </div>
                 </div>
