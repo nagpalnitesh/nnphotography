@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -10,15 +10,32 @@ import "swiper/css/effect-fade";
 // import required modules
 import { Autoplay, Pagination, EffectFade } from "swiper/modules";
 
-// import SlideImg1 from "../assets/nnphotography/DSC_1832.jpeg";
-import SlideImg2 from "../assets/nnphotography/DSC_18891.jpeg";
-import SlideImg3 from "../assets/nnphotography/DSC_3165.jpeg";
-import SlideImg4 from "../assets/nnphotography/DSC_2725.jpeg";
-import SlideImg5 from "../assets/nnphotography/DSC_3421.jpeg";
-import SlideImg6 from "../assets/nnphotography/DSC_E0582.jpeg";
-// import SlideImg7 from "../assets/nnphotography/DSC_9326.jpeg";
-
 const Slider = () => {
+  console.log("Slider");
+  const [images, setImages] = useState();
+
+  useEffect(() => {
+    fecthData();
+  }, []);
+
+  const fecthData = async () => {
+    try {
+      const response = await fetch(
+        "https://nnphotography-backend.onrender.com/api/home"
+      );
+
+      if (response.ok) {
+        const data = await response.json();
+        setImages(data.resources);
+        console.log(data); // Handle the fetched data here
+      } else {
+        console.error("Failed to fetch data:", response.status);
+      }
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
   return (
     <>
       <Swiper
@@ -37,24 +54,14 @@ const Slider = () => {
         modules={[Autoplay, Pagination, EffectFade]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <img src={SlideImg3} alt={"Frog"} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={SlideImg2} alt={"Monkey"} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={SlideImg4} alt={"Tiger"} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={SlideImg5} alt={"Rose Pelican"} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={SlideImg6} alt={"Rose Pelican Swim"} />
-        </SwiperSlide>
-        {/* <SwiperSlide>
-          <img src={SlideImg7} alt={"Tiger Watch"} />
-        </SwiperSlide> */}
+        {images &&
+          images.map((image) => {
+            return (
+              <SwiperSlide>
+                <img src={image.url} alt={"Rose Pelican Swim"} />
+              </SwiperSlide>
+            );
+          })}
       </Swiper>
     </>
   );

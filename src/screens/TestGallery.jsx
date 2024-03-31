@@ -15,48 +15,34 @@ import { Buffer } from "buffer";
 
 // Import Images
 // To Import all imgaes from asset folder
-const Images = require.context("../assets/nnphotography", true);
-const ImageList = Images.keys().map((image) => Images(image));
+// const Images = require.context("../assets/nnphotography", true);
+// const ImageList = Images.keys().map((image) => Images(image));
 // Ends
 
 const TestGallery = () => {
-  console.log(
-    "23: ",
-    process.env,
-    process.env.REACT_APP_CLOUDINARY_CLOUD_NAME,
-    `
-            ${process.env.REACT_APP_CLOUDINARY_API_KEY} +
-              ":" +
-              ${process.env.REACT_APP_CLOUDINARY_API_SECRET}`
-  );
   const [isFullScreen, setIsFullScreen] = useState(false);
   const [imageSet, setImage] = useState();
 
   const [images, setImages] = useState([]);
 
   useEffect(() => {
-    fetchImages();
+    fecthData();
   }, []);
 
-  const fetchImages = async () => {
-    let response = await fetch(
-      `https://api.cloudinary.com/v1_1/${process.env.REACT_APP_CLOUDINARY_CLOUD_NAME}/resources/image`,
-      {
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Basic ${Buffer.from(
-            process.env.REACT_APP_CLOUDINARY_API_KEY +
-              ":" +
-              process.env.REACT_APP_CLOUDINARY_API_SECRET
-          ).toString("base64")}'`,
-        },
+  const fecthData = async () => {
+    try {
+      const response = await fetch("http://localhost:8000/api/gallery");
+
+      if (response.ok) {
+        const data = await response.json();
+        setImages(data.resources);
+        console.log(data); // Handle the fetched data here
+      } else {
+        console.error("Failed to fetch data:", response.status);
       }
-    )
-      .then((res) => {
-        console.log("res", res);
-        res.json();
-      })
-      .catch((err) => console.error(err));
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
   };
 
   const toggleFullscreen = () => {
@@ -67,14 +53,8 @@ const TestGallery = () => {
       document.body.style.overflowY = "auto";
     }
   };
-  // const fullScreenImage = () => {
-  //   console.log("Image Selected");
-  //   return (
-  //     <div className="fullscreen-image">
-  //       <h1>Hello World</h1>
-  //     </div>
-  //   );
-  // };
+
+  console.log("57: ", images);
 
   return (
     <>
@@ -123,8 +103,8 @@ const TestGallery = () => {
         {/* Gallery Section */}
         <div className="gallery-section">
           {/* Gallery Cards */}
-          {ImageList &&
-            ImageList.map((image) => (
+          {images &&
+            images.map((image) => (
               <>
                 <div className="gallery-list-item">
                   <div className="gallery-card w-inline-block">
@@ -136,7 +116,7 @@ const TestGallery = () => {
                           toggleFullscreen();
                         }}
                         style={{
-                          backgroundImage: `url(${image})`,
+                          backgroundImage: `url(${image.url})`,
                           transformStyle: "preserve-3d",
                           opacity: "1",
                           backgroundPositionY: 0,

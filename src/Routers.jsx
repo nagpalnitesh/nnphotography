@@ -5,7 +5,7 @@ import Home from "./screens/Home";
 import Gallery from "./screens/Gallery";
 import About from "./screens/About";
 import Contact from "./screens/Contact";
-import TestGallery from "./screens/TestGallery";
+// import TestGallery from "./screens/TestGallery";
 
 const Routers = () => {
   return (
@@ -20,7 +20,7 @@ const Routers = () => {
                 <Route exact path="/" element={<Home />} />
                 <Route exact path="*" element={<Home />} />
                 {/* Gallery */}
-                <Route exact path="/test-gallery" element={<TestGallery />} />
+                {/* <Route exact path="/test-gallery" element={<TestGallery />} /> */}
                 <Route exact path="/gallery" element={<Gallery />} />
                 {/* About Me */}
                 <Route exact path="/about-me" element={<About />} />

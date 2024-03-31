@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 
 import HeaderImg from "../assets/images/DSC_2725.jpeg";
@@ -8,17 +8,33 @@ import ArrowIcon from "../assets/icons/arrow-90.png";
 import LeftArrowIcon from "../assets/icons/left-arrow-90.png";
 import PageHeader from "../components/PageHeader";
 import Footer from "../components/Footer";
-// import Slider from "../components/Slider";
-
-// Import Images
-// To Import all imgaes from asset folder
-const Images = require.context("../assets/nnphotography", true);
-const ImageList = Images.keys().map((image) => Images(image));
-// Ends
 
 const Gallery = () => {
   const [isFullScreen, setIsFullScreen] = useState(false);
   const [imageSet, setImage] = useState();
+  const [images, setImages] = useState();
+
+  useEffect(() => {
+    fecthData();
+  }, []);
+
+  const fecthData = async () => {
+    // API_URL = "https://nnphotography-backend.onrender.com";
+    try {
+      const response = await fetch(
+        `https://nnphotography-backend.onrender.com/api/gallery`
+      );
+
+      if (response.ok) {
+        const data = await response.json();
+        setImages(data.resources); // Handle the fetched data here
+      } else {
+        console.error("Failed to fetch data:", response.status);
+      }
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
 
   const toggleFullscreen = () => {
     setIsFullScreen(!isFullScreen);
@@ -85,34 +101,36 @@ const Gallery = () => {
         {/* Gallery Section */}
         <div className="gallery-section">
           {/* Gallery Cards */}
-          {ImageList &&
-            ImageList.map((image) => (
-              <>
-                <div className="gallery-list-item">
-                  <div className="gallery-card w-inline-block">
-                    <div className="card-img-container">
-                      {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
-                      <div
-                        onClick={() => {
-                          setImage(image);
-                          toggleFullscreen();
-                        }}
-                        style={{
-                          backgroundImage: `url(${image})`,
-                          transformStyle: "preserve-3d",
-                          opacity: "1",
-                          backgroundPositionY: 0,
-                          backgroundRepeat: "no-repeat",
-                          transform:
-                            "translate3d(0px, 0px, 0px) scale3d(1.08, 1.08, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                        }}
-                        className="gallery-card-img"
-                      ></div>
+          {images &&
+            images.map((image, index) => {
+              return (
+                <div key={index}>
+                  <div className="gallery-list-item">
+                    <div className="gallery-card w-inline-block">
+                      <div className="card-img-container">
+                        {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
+                        <div
+                          onClick={() => {
+                            setImage(image.url);
+                            toggleFullscreen();
+                          }}
+                          style={{
+                            backgroundImage: `url(${image.url})`,
+                            transformStyle: "preserve-3d",
+                            opacity: "1",
+                            backgroundPositionY: 0,
+                            backgroundRepeat: "no-repeat",
+                            transform:
+                              "translate3d(0px, 0px, 0px) scale3d(1.08, 1.08, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                          }}
+                          className="gallery-card-img"
+                        ></div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </>
-            ))}
+              );
+            })}
         </div>
         {/* CTA */}
         <div className="call-to-action">

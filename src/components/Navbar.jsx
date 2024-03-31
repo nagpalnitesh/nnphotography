@@ -37,7 +37,7 @@ const Navbar = ({ activeMenu }) => {
                 ></div>
               </a>
             </li>
-            {/* <li className="nav-item">
+            <li className="nav-item">
               <a href="/gallery" className="nav-link">
                 <div>Gallery</div>
                 <div
@@ -48,8 +48,8 @@ const Navbar = ({ activeMenu }) => {
                   }`}
                 ></div>
               </a>
-            </li> */}
-            <li className="nav-item">
+            </li>
+            {/* <li className="nav-item">
               <a href="/test-gallery" className="nav-link">
                 <div>Test Gallery</div>
                 <div
@@ -60,7 +60,7 @@ const Navbar = ({ activeMenu }) => {
                   }`}
                 ></div>
               </a>
-            </li>
+            </li> */}
             {/* <li className="nav-item">
               <a href="#" className="nav-link">
                 Prints
