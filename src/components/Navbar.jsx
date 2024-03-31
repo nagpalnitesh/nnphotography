@@ -37,9 +37,21 @@ const Navbar = ({ activeMenu }) => {
                 ></div>
               </a>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a href="/gallery" className="nav-link">
                 <div>Gallery</div>
+                <div
+                  className={`underline  ${
+                    activeMenu === "Gallery"
+                      ? "active-menu"
+                      : "nav-link-underline"
+                  }`}
+                ></div>
+              </a>
+            </li> */}
+            <li className="nav-item">
+              <a href="/test-gallery" className="nav-link">
+                <div>Test Gallery</div>
                 <div
                   className={`underline  ${
                     activeMenu === "Gallery"
