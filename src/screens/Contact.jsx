@@ -75,11 +75,6 @@ const Contact = () => {
           headerImg={HeaderImg2}
         />
       </div>
-      {/* <div className="gallery-header">
-        <div className="gallery-header-img">
-          <h1 className="gallery-header-text">Gallery</h1>
-        </div>
-      </div> */}
       {/* Contact-Tagline */}
       <div className="gallery-section-text">
         {/* <p>Captured Moments, Framed Eternally</p> */}
