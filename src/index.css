@@ -30,7 +30,7 @@ font-family: 'Quattrocento', serif; //subheading
 }
 
 .wrapper {
-  min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
 }
@@ -332,9 +332,10 @@ a:hover {
 }
 
 .home-slider {
-  height: 100vh;
-  overflow: hidden;
+  height: 100svh;
+  overflow: hidden !important;
   position: relative;
+  /* background-color: red; */
   /* background-image: -webkit-gradient(
       linear,
       left top,
@@ -1323,12 +1324,12 @@ textarea:valid + label {
   }
 
   .my-photo {
-    width: 100%;
+    width: 90%;
   }
 
   .my-photo img {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
   }
 
   .about-me-text {
