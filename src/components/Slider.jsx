@@ -20,9 +20,7 @@ const Slider = () => {
 
   const fecthData = async () => {
     try {
-      const response = await fetch(
-        "https://nnphotography-backend.onrender.com/api/home"
-      );
+      const response = await fetch("https://backend.nnphotography.in/api/home");
 
       if (response.ok) {
         const data = await response.json();

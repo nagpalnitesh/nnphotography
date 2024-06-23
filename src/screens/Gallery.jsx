@@ -19,10 +19,10 @@ const Gallery = () => {
   }, []);
 
   const fecthData = async () => {
-    // API_URL = "https://nnphotography-backend.onrender.com";
+    // API_URL = "https://backend.nnphotography.in";
     try {
       const response = await fetch(
-        `https://nnphotography-backend.onrender.com/api/gallery`
+        `https://backend.nnphotography.in/api/gallery`
       );
 
       if (response.ok) {

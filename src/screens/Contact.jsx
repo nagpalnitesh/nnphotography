@@ -26,7 +26,7 @@ const Contact = () => {
 
     try {
       const response = await fetch(
-        "https://nnphotography-backend.onrender.com/send-email",
+        "https://backend.nnphotography.in/send-email",
         {
           method: "POST",
           headers: {
