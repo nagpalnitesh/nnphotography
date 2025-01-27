@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="footer-section">
       <div className="footer">
         <a href="/" className="footer-brand nav-brand">
-          <img src={Logo} alt="nn photography" className="logo-navbar" />
+          <img src={ Logo } alt="nn photography" className="logo-navbar" />
         </a>
         <div className="footer-social-menu">
           <div className="dot-separator main-dot-separator w-hidden-tiny w-condition-invisible">
@@ -76,7 +76,9 @@ const Footer = () => {
         <div className="copyright">
           <div className="copyright-text">
             <p>
-              Developed by <b>NITESH NAGPAL</b>
+              Developed by <a href="https://niteshnagpal.com" className="footer-social-link"
+                target="_blank"
+                rel="noreferrer"><b>NITESH NAGPAL</b></a>
             </p>
             {/* <a
               href="/"
@@ -93,7 +95,7 @@ const Footer = () => {
           </div>
           <div className="footer-line-separator">|</div>
           <div className="copyright-text">
-            <p>Copyright &copy; {d.getFullYear()}</p>
+            <p>Copyright &copy; { d.getFullYear() }</p>
           </div>
           {/* <a href="/" target="_blank" className="footer-link w-inline-block">
             Pixxmo Online Services Pvt. Ltd.
