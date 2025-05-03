@@ -28,7 +28,7 @@ const Footer = () => {
             <div>•</div>
           </div>
           <a
-            href="https://www.instagram.com/__nnphotography__/"
+            href="https://www.instagram.com/nnphotography.in/"
             className="footer-social-link w-inline-bock"
             target="_blank"
             rel="noreferrer"
