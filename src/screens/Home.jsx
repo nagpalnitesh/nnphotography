@@ -95,7 +95,7 @@ const Home = () => {
           </a>
           {/* Instagram */}
           <a
-            href="https://www.instagram.com/__nnphotography__/"
+            href="https://www.instagram.com/nnphotography.in/"
             target="_blank"
             rel="noreferrer"
           >
