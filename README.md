@@ -1,50 +1,146 @@
-# Wildlife & Nature Photography Website
+# NNPhotography
 
-Welcome to my Wildlife & Nature Photography Website repository! This project showcases my photography work capturing the beauty of wildlife and nature.
+![React](https://img.shields.io/badge/React-Frontend-61DAFB?logo=react&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?logo=bootstrap&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-Pages-F38020?logo=cloudflare&logoColor=white)
+![License](https://img.shields.io/github/license/nagpalnitesh/nnphotography)
+![Last Commit](https://img.shields.io/github/last-commit/nagpalnitesh/nnphotography)
 
-## Overview
+A personal wildlife and nature photography portfolio showcasing birds, mammals, reptiles, insects, landscapes, and macro photography.
 
-This website serves as a platform to share my passion for wildlife and nature photography with the world. Through stunning imagery and captivating stories, I aim to inspire others to appreciate and protect the natural world around us.
+🌿 **Live Website:** https://nnphotography.in
+
+---
+
+## About
+
+NNPhotography is my personal photography portfolio, built to showcase wildlife and nature through high-quality images.
+
+The website provides a fast and responsive browsing experience while delivering optimized images through Cloudinary.
+
+---
 
 ## Features
 
-- **Gallery:** Browse through a collection of breathtaking wildlife and nature photographs.
-<!--- **Blog:** Dive into articles and stories behind the photographs, conservation efforts, and photography tips. --->
-- **Contact:** Connect with me to inquire about prints, collaborations, or simply to share your thoughts.
+- 📷 Wildlife & nature photography gallery
+- 🖼️ Responsive image gallery
+- 🚀 Optimized image delivery
+- ☁️ Cloudinary integration
+- 📱 Fully responsive design
+- 📬 Contact page
 
-## Technologies Used
+---
 
-- **Frontend:** HTML, CSS, JavaScript
-- **Backend:** Node.js, Express.js
-- **Image Storage:** Cloudinary
-- **Hosting:** Netlify (frontend) and Render (Backend)
+## Tech Stack
 
-## Getting Started
+### Frontend
 
-To view the website locally or contribute to the project, follow these steps:
+- React
+- JavaScript
+- Bootstrap
 
-1. Clone this repository: `git clone https://github.com/nagpalnitesh/nnphotography.git`
-2. Navigate to the project directory: `cd nnphotography`
-3. Install dependencies: `npm install`
-4. Start the development server: `npm start`
+### Backend
 
-## Contributing
+- Node.js
+- Express.js
 
-Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
+### Services
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature`).
-3. Make your changes.
-4. Commit your changes (`git commit -am 'Add some feature'`).
-5. Push to the branch (`git push origin feature/your-feature`).
-6. Create a new Pull Request.
+- MongoDB
+- Cloudinary
+- Cloudflare Pages
+
+---
+
+## Project Structure
+
+```text
+.
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── assets/
+│   └── services/
+├── package.json
+└── README.md
+```
+
+---
+
+## Running Locally
+
+Clone the repository
+
+```bash
+git clone https://github.com/nagpalnitesh/nnphotography.git
+```
+
+Navigate to the project
+
+```bash
+cd nnphotography
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the development server
+
+```bash
+npm start
+```
+
+---
+
+## Related Project
+
+Backend API
+
+https://github.com/nagpalnitesh/nnphotography-backend
+
+---
+
+## Roadmap
+
+- Improved gallery filtering
+- Species pages
+- Better image search
+- Dark mode
+- Photography blog
+- EXIF metadata
+- SEO improvements
+
+---
 
 ## Contact
 
-For inquiries, collaborations, or just to say hello, feel free to reach out to me:
+📧 Email
 
-- **Email:** [niteshnagpalphotography@gmail.com](mailto:niteshnagpalphotography@gmail.com)
-- **LinkedIn:** [Nitesh Nagpal](https://www.linkedin.com/in/nagpalnitesh/)
-- **Instagram:** [@__nnphotography__](https://www.instagram.com/__nnphotography__/)
+niteshnagpalphotography@gmail.com
 
+📸 Instagram
 
+https://instagram.com/__nnphotography__
+
+💼 LinkedIn
+
+https://linkedin.com/in/nagpalnitesh
+
+🌐 Website
+
+https://nnphotography.in
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+If you enjoy the project, consider giving it a ⭐ on GitHub.
