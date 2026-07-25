@@ -8,7 +8,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?logo=bootstrap&logoColor=white)
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-Pages-F38020?logo=cloudflare&logoColor=white)
-![License](https://img.shields.io/github/license/nagpalnitesh/nnphotography)
+![License](https://img.shields.io/github/license/nagpalnitesh/nnphotography?cacheSeconds=300)
 ![Last Commit](https://img.shields.io/github/last-commit/nagpalnitesh/nnphotography)
 
 A personal wildlife and nature photography portfolio showcasing birds, mammals, reptiles, insects, landscapes, and macro photography.
