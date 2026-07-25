@@ -1,5 +1,9 @@
 # NNPhotography
 
+<p align="center">
+  <img src="./public/homepage.png" alt="NNPhotography Homepage" width="100%">
+</p>
+
 ![React](https://img.shields.io/badge/React-Frontend-61DAFB?logo=react&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?logo=bootstrap&logoColor=white)
