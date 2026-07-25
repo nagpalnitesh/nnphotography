@@ -1,20 +1,19 @@
-import React from "react";
-import Navbar from "../components/Navbar";
-import Slider from "../components/Slider";
+import Navbar from '../components/Navbar';
+import Slider from '../components/Slider';
 
-import GridIcon from "../assets/icons/grid-90.png";
-import px500Icon from "../assets/icons/500px-90.png";
-import YoupicIcon from "../assets/icons/296377_OkiZZbJi0qz7PGcI_85399-removebg-preview.png";
+import YoupicIcon from '../assets/icons/296377_OkiZZbJi0qz7PGcI_85399-removebg-preview.png';
+import px500Icon from '../assets/icons/500px-90.png';
+import GridIcon from '../assets/icons/grid-90.png';
 
 const Home = () => {
   return (
-    <div className="home-slider">
+    <div className='home-slider'>
       {/* Navbar */}
-      <Navbar activeMenu="Home" />
+      <Navbar activeMenu='Home' />
       {/* Slider */}
       {/* <div className="overlay"></div> */}
-      <div className="banner">
-        <div className="video">
+      <div className='banner'>
+        <div className='video'>
           {/* <Slider /> */}
           <Slider />
         </div>
@@ -54,18 +53,18 @@ const Home = () => {
         </div>
       </div> */}
       {/* footer Buttons */}
-      <div className="home-footer">
-        <div className="circle-border">
-          <a href="/gallery">
-            <div className="circle-border-img">
-              <img src={GridIcon} alt="view gallery" className="gallery-grid" />
-              <div className="gallery-text">View Gallery</div>
+      <div className='home-footer'>
+        <div className='circle-border'>
+          <a href='/gallery'>
+            <div className='circle-border-img'>
+              <img src={GridIcon} alt='view gallery' className='gallery-grid' />
+              <div className='gallery-text'>View Gallery</div>
             </div>
           </a>
           {/* textarea */}
           {/* <i className="fa-solid fa-grip gallery-grid"></i> */}
         </div>
-        <div className="social-icons mobile-display">
+        <div className='social-icons mobile-display'>
           {/* <div className="circle-border mx-3">
             <div className="circle-border-img">
               <img src={GridIcon} alt="view gallery" className="gallery-grid" />
@@ -73,113 +72,113 @@ const Home = () => {
           </div> */}
           {/* Youpic */}
           <a
-            href="https://youpic.com/photographer/NN_Photography/"
-            target="_blank"
-            rel="noreferrer"
+            href='https://youpic.com/photographer/NN_Photography/'
+            target='_blank'
+            rel='noreferrer'
           >
-            <div className="pie-wrapper progress-45 style-2 mx-3">
-              <span className="label">
+            <div className='pie-wrapper progress-45 style-2 mx-3'>
+              <span className='label'>
                 <img
                   src={YoupicIcon}
-                  alt="view gallery"
-                  className="youpic-img social-icon-img"
+                  alt='view gallery'
+                  className='youpic-img social-icon-img'
                 />
                 {/* <i class="fa-brands fa-facebook-f social-icon-img"></i> */}
               </span>
-              <div className="pie">
-                <div className="left-side half-circle"></div>
-                <div className="right-side half-circle"></div>
+              <div className='pie'>
+                <div className='left-side half-circle'></div>
+                <div className='right-side half-circle'></div>
               </div>
-              <div className="shadow"></div>
+              <div className='shadow'></div>
             </div>
           </a>
           {/* Instagram */}
           <a
-            href="https://www.instagram.com/nnphotography.in/"
-            target="_blank"
-            rel="noreferrer"
+            href='https://www.instagram.com/nnphotography.in/'
+            target='_blank'
+            rel='noreferrer'
           >
-            <div className="pie-wrapper progress-45 style-2 mx-3">
-              <span className="label">
+            <div className='pie-wrapper progress-45 style-2 mx-3'>
+              <span className='label'>
                 {/* <img
                 src={GridIcon}
                 alt="view gallery"
                 className="social-icon-img"
               /> */}
-                <i class="fa-brands fa-instagram social-icon-img"></i>
+                <i className='fa-brands fa-instagram social-icon-img'></i>
               </span>
-              <div className="pie">
-                <div className="left-side half-circle"></div>
-                <div className="right-side half-circle"></div>
+              <div className='pie'>
+                <div className='left-side half-circle'></div>
+                <div className='right-side half-circle'></div>
               </div>
-              <div className="shadow"></div>
+              <div className='shadow'></div>
             </div>
           </a>
           {/* Facebook */}
           <a
-            href="https://www.facebook.com/nnphotography09"
-            target="_blank"
-            rel="noreferrer"
+            href='https://www.facebook.com/nnphotography09'
+            target='_blank'
+            rel='noreferrer'
           >
-            <div className="pie-wrapper progress-45 style-2 mx-3">
-              <span className="label">
+            <div className='pie-wrapper progress-45 style-2 mx-3'>
+              <span className='label'>
                 {/* <img
                 src={GridIcon}
                 alt="view gallery"
                 className="social-icon-img"
               /> */}
-                <i class="fa-brands fa-facebook-f social-icon-img"></i>
+                <i className='fa-brands fa-facebook-f social-icon-img'></i>
               </span>
-              <div className="pie">
-                <div className="left-side half-circle"></div>
-                <div className="right-side half-circle"></div>
+              <div className='pie'>
+                <div className='left-side half-circle'></div>
+                <div className='right-side half-circle'></div>
               </div>
-              <div className="shadow"></div>
+              <div className='shadow'></div>
             </div>
           </a>
           {/* Twitter */}
           <a
-            href="https://twitter.com/_niteshnagpal_"
-            target="_blank"
-            rel="noreferrer"
+            href='https://twitter.com/_niteshnagpal_'
+            target='_blank'
+            rel='noreferrer'
           >
-            <div className="pie-wrapper progress-45 style-2 mx-3">
-              <span className="label">
+            <div className='pie-wrapper progress-45 style-2 mx-3'>
+              <span className='label'>
                 {/* <img
                 src={GridIcon}
                 alt="view gallery"
                 className="social-icon-img"
               /> */}
                 {/* <i class="fa-brands fa-twitter"></i> */}
-                <i class="fa-brands  fa-twitter social-icon-img"></i>
+                <i className='fa-brands  fa-twitter social-icon-img'></i>
               </span>
-              <div className="pie">
-                <div className="left-side half-circle"></div>
-                <div className="right-side half-circle"></div>
+              <div className='pie'>
+                <div className='left-side half-circle'></div>
+                <div className='right-side half-circle'></div>
               </div>
-              <div className="shadow"></div>
+              <div className='shadow'></div>
             </div>
           </a>
           {/* 500px */}
           <a
-            href="https://500px.com/p/niteshnagpal"
-            target="_blank"
-            rel="noreferrer"
+            href='https://500px.com/p/niteshnagpal'
+            target='_blank'
+            rel='noreferrer'
           >
-            <div className="pie-wrapper progress-45 style-2 mx-3">
-              <span className="label">
+            <div className='pie-wrapper progress-45 style-2 mx-3'>
+              <span className='label'>
                 <img
                   src={px500Icon}
-                  alt="view gallery"
-                  className="px500_icon social-icon-img"
+                  alt='view gallery'
+                  className='px500_icon social-icon-img'
                 />
                 {/* <i class="fa-brands fa-instagram social-icon-img"></i> */}
               </span>
-              <div className="pie">
-                <div className="left-side half-circle"></div>
-                <div className="right-side half-circle"></div>
+              <div className='pie'>
+                <div className='left-side half-circle'></div>
+                <div className='right-side half-circle'></div>
               </div>
-              <div className="shadow"></div>
+              <div className='shadow'></div>
             </div>
           </a>
         </div>
