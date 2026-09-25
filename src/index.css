@@ -282,6 +282,94 @@ a:hover {
   position: relative;
 }
 
+/* Bottom scrim keeps the hero text readable on every slide without tinting
+   the subject, which sits in the middle of the frame. */
+.home-slider::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 45%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-identity {
+  position: absolute;
+  left: 40px;
+  bottom: calc(2.5% + 100px);
+  z-index: 2;
+  max-width: calc(100% - 80px);
+  color: #fff;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+.hero-name {
+  margin: 0;
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  letter-spacing: 0.12em;
+  line-height: 1.1;
+}
+
+.hero-role {
+  margin: 0.4em 0 1.2em;
+  font-family: "Quattrocento", serif;
+  font-size: clamp(0.85rem, 1.6vw, 1.1rem);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.hero-cta {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: "Lora", serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-shadow: none;
+  background: rgba(0, 0, 0, 0.35);
+  transition: background 200ms ease, color 200ms ease;
+}
+
+.hero-cta:hover,
+.hero-cta:focus-visible {
+  background: #fff;
+  color: var(--blackColor);
+}
+
+.hero-cta:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+@media only screen and (max-width: 600px) {
+  /* The hero CTA replaces the round gallery button on phones, which lets the
+     text sit lower and stay clear of the (tighter-cropped) subject. */
+  .home-footer .circle-border {
+    display: none;
+  }
+
+  .hero-identity {
+    left: 20px;
+    max-width: calc(100% - 40px);
+    bottom: 28px;
+  }
+
+  .hero-name {
+    font-size: 1.5rem;
+  }
+
+  .hero-role {
+    margin-bottom: 0.9em;
+  }
+}
+
 .gallery .overlay {
   position: fixed;
   bottom: 0;

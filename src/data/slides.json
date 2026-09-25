@@ -1,0 +1,57 @@
+{
+  "_readme": [
+    "Homepage slideshow, in display order. Extracted from /api/home. The first slide is the LCP image and gets fetchpriority=high.",
+    "Each slide is informative content (the homepage has no other photo description), so each has its own alt written from visual inspection. Nitesh: please review."
+  ],
+  "slides": [
+    {
+      "id": "DSC_4981_qda0tg",
+      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1784918906/NNPhotography/slider/DSC_4981_qda0tg.jpg",
+      "width": 6016,
+      "height": 4000,
+      "alt": "Close-up of a green crested bird with a red-ringed eye and a red bill"
+    },
+    {
+      "id": "DSC_9448_b2b6ig",
+      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1784918900/NNPhotography/slider/DSC_9448_b2b6ig.jpg",
+      "width": 6016,
+      "height": 4000,
+      "alt": "Maned lion resting in grass with its eyes half closed"
+    },
+    {
+      "id": "is4bnwgpfjck82ixr9s3",
+      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1711876929/NNPhotography/slider/is4bnwgpfjck82ixr9s3.jpg",
+      "width": 5257,
+      "height": 2957,
+      "alt": "Pelican with wings outstretched on a curved concrete ledge"
+    },
+    {
+      "id": "Rose Pelican Swim",
+      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1711876929/NNPhotography/slider/Rose%20Pelican%20Swim.jpg",
+      "width": 2613,
+      "height": 1737,
+      "alt": "Pale pink pelican swimming beside a round stepping stone"
+    },
+    {
+      "id": "z6lpqtsxiq8ohl4wbhwx",
+      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1711876927/NNPhotography/slider/z6lpqtsxiq8ohl4wbhwx.jpg",
+      "width": 4000,
+      "height": 2251,
+      "alt": "Tiger in water with only its head and shoulders showing"
+    },
+    {
+      "id": "loygpamvja4krg8cc4ox",
+      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1711876896/NNPhotography/slider/loygpamvja4krg8cc4ox.jpg",
+      "width": 3841,
+      "height": 2554,
+      "alt": "Frog with bulging eyes resting among dry leaves"
+    },
+    {
+      "id": "urggsvsru80xurcqypqs",
+      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1711876884/NNPhotography/slider/urggsvsru80xurcqypqs.jpg",
+      "width": 4000,
+      "height": 2250,
+      "alt": "Close-up of a monkey resting its hand on a dry leaf"
+    }
+  ]
+}
