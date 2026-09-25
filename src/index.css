@@ -693,16 +693,88 @@ a:hover {
   margin: auto;
 }
 
+ul.gallery-section {
+  list-style: none;
+}
+
+figure.gallery-card {
+  margin: auto;
+}
+
 .gallery-card-img {
+  display: block;
   height: 300px;
   width: 370px;
-  background-position: 50%, 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  padding: 0;
+  border: 0;
+  background: var(--greyColor);
+  overflow: hidden;
   border-radius: 10px;
   margin: auto;
   box-shadow: 0px 0px 24px 6px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+}
+
+.gallery-card-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.02);
+  transition: transform 300ms ease;
+}
+
+.gallery-card-img:hover img,
+.gallery-card-img:focus-visible img {
+  transform: scale(1.08);
+}
+
+.gallery-card-img:focus-visible {
+  outline: 3px solid var(--blackColor);
+  outline-offset: 4px;
+}
+
+.gallery-caption {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 12px 15px 0;
+  font-family: "Lora", serif;
+  color: var(--blackColor);
+}
+
+.gallery-caption-title {
+  font-family: "Quattrocento", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.gallery-caption-location {
+  font-size: 0.9rem;
+  color: var(--greyColor);
+}
+
+.gallery-show-all {
+  text-align: center;
+  margin: 0 0 3em;
+}
+
+.gallery-show-all-button {
+  padding: 1em 2em;
+  border: 1px solid var(--blackColor);
+  background: transparent;
+  color: var(--blackColor);
+  font-family: "Quattrocento", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  cursor: pointer;
+}
+
+.gallery-show-all-button:hover,
+.gallery-show-all-button:focus-visible {
+  background: var(--blackColor);
+  color: var(--whiteColor);
 }
 
 .call-to-action {
@@ -1104,8 +1176,32 @@ textarea:valid + label {
   top: 0;
   right: 2%;
   font-size: 50px;
+  line-height: 1;
+  padding: 0 10px;
+  background: transparent;
+  border: 0;
   position: absolute;
   cursor: pointer;
+}
+
+.closeButton:focus-visible,
+.lightbox-original:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+.lightbox-original {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--whiteColor);
+  font-family: "Lora", serif;
+  font-size: 0.9rem;
+}
+
+.lightbox-original:hover {
+  color: white;
 }
 
 .fullscreenImageView h1 {
