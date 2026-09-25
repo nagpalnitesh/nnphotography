@@ -22,13 +22,13 @@ const Home = () => {
         </div>
       </div>
       {/* Hero identity */}
-      <div className='hero-identity'>
+      {/* <div className='hero-identity'>
         <h1 className='hero-name'>Nitesh Nagpal</h1>
         <p className='hero-role'>Wildlife Photographer</p>
         <a href='/gallery' className='hero-cta'>
           View wildlife gallery
         </a>
-      </div>
+      </div> */}
       {/* Details Section */}
       {/* <div className="main-text">
         <div className="main-small-header">Nitesh Nagpal</div>
