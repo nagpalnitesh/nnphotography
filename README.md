@@ -129,7 +129,7 @@ niteshnagpalphotography@gmail.com
 
 📸 Instagram
 
-https://instagram.com/__nnphotography__
+https://www.instagram.com/nnphotography.in
 
 💼 LinkedIn
 
