@@ -1043,6 +1043,46 @@ textarea:valid + label {
   transform: translateY(-27px);
 }
 
+/* Optional fields are always :valid, so float the label only once typed in. */
+.form .field.optional .text-input:placeholder-shown:not(:focus) + label {
+  transform: none;
+}
+
+.form .button:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.form .button:focus-visible {
+  outline: 3px solid var(--greyColor);
+  outline-offset: 3px;
+}
+
+.form-status-wrapper {
+  clear: both;
+}
+
+.form-status {
+  margin: 0 0 1em;
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.form-status:empty {
+  margin: 0;
+}
+
+.form-status-error {
+  color: #a4161a;
+}
+
+.form-status-error a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 40em) {
   .form .field.half {
     width: calc(50% - 2em);
