@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useRef, useState } from 'react';
 import Navbar from '../components/Navbar';
 
 import ArrowIcon from '../assets/icons/arrow-90.png';
@@ -7,52 +7,31 @@ import HeaderImg from '../assets/images/DSC_2725.jpeg';
 import HeaderImg3 from '../assets/images/DSC_9634.jpg';
 import HeaderImg2 from '../assets/images/DSC_9885.jpg';
 import Footer from '../components/Footer';
+import GalleryCard from '../components/GalleryCard';
+import Lightbox from '../components/Lightbox';
 import PageHeader from '../components/PageHeader';
+import { featuredImages, remainingImages } from '../data/gallery';
+import usePageMeta from '../seo/usePageMeta';
+
+// The first desktop row can be in view on load, so those images load eagerly;
+// everything after it is lazy-loaded.
+const EAGER_COUNT = 3;
 
 const Gallery = () => {
-  const [isFullScreen, setIsFullScreen] = useState(false);
-  const [imageSet, setImage] = useState();
-  const [images, setImages] = useState();
+  usePageMeta('/gallery');
+  const [selected, setSelected] = useState(null);
+  const [showAll, setShowAll] = useState(false);
+  const openerRef = useRef(null);
 
-  useEffect(() => {
-    fecthData();
+  const openImage = useCallback((image, opener) => {
+    openerRef.current = opener;
+    setSelected(image);
   }, []);
 
-  const fecthData = async () => {
-    // API_URL = "https://backend.nnphotography.in";
-    try {
-      const response = await fetch(
-        `https://backend.nnphotography.in/api/gallery`,
-      );
-
-      if (response.ok) {
-        const data = await response.json();
-        setImages(data); // Handle the fetched data here
-      } else {
-        console.error('Failed to fetch data:', response.status);
-      }
-    } catch (error) {
-      console.error('Error fetching data:', error);
-    }
-  };
-
-  const toggleFullscreen = () => {
-    setIsFullScreen(!isFullScreen);
-    if (!isFullScreen) {
-      document.body.style.overflowY = 'hidden';
-    } else {
-      document.body.style.overflowY = 'auto';
-    }
-  };
-
-  // const fullScreenImage = () => {
-  //   console.log("Image Selected");
-  //   return (
-  //     <div className="fullscreen-image">
-  //       <h1>Hello World</h1>
-  //     </div>
-  //   );
-  // };
+  const closeImage = useCallback(() => {
+    setSelected(null);
+    openerRef.current?.focus();
+  }, []);
 
   return (
     <>
@@ -65,7 +44,7 @@ const Gallery = () => {
         {/* TODO: parallax background with overlay */}
         <div className='overlay'></div>
         <div className='banner'>
-          <img src={HeaderImg} alt='Background' />
+          <img src={HeaderImg} alt='' />
         </div>
         <div className='gallery-page-header'>
           <PageHeader
@@ -88,48 +67,33 @@ const Gallery = () => {
           <hr />
         </div>
         {/* Display Image in FullView */}
-        <div
-          className={`fullscreenImageView ${
-            isFullScreen ? 'fullscreen-image' : 'no-image'
-          }`}
-        >
-          <img src={imageSet} alt='' />
-          <span className='closeButton' onClick={toggleFullscreen}>
-            &times;
-          </span>
-        </div>
+        <Lightbox image={selected} onClose={closeImage} />
         {/* Gallery Section */}
-        <div className='gallery-section'>
-          {/* Gallery Cards */}
-          {images &&
-            images.map((image, index) => {
-              return (
-                <div className='gallery-list-item' key={index}>
-                  <div className='gallery-card w-inline-block'>
-                    <div className='card-img-container'>
-                      {/* <img src={HeaderImg} alt="" className="img-hover-icon" /> */}
-                      <div
-                        onClick={() => {
-                          setImage(image.url);
-                          toggleFullscreen();
-                        }}
-                        style={{
-                          backgroundImage: `url(${image.url})`,
-                          transformStyle: 'preserve-3d',
-                          opacity: '1',
-                          backgroundPositionY: 0,
-                          backgroundRepeat: 'no-repeat',
-                          transform:
-                            'translate3d(0px, 0px, 0px) scale3d(1.08, 1.08, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)',
-                        }}
-                        className='gallery-card-img'
-                      ></div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-        </div>
+        <ul className='gallery-section'>
+          {featuredImages.map((image, index) => (
+            <GalleryCard
+              key={image.id}
+              image={image}
+              eager={index < EAGER_COUNT}
+              onOpen={openImage}
+            />
+          ))}
+          {showAll &&
+            remainingImages.map((image) => (
+              <GalleryCard key={image.id} image={image} onOpen={openImage} />
+            ))}
+        </ul>
+        {remainingImages.length > 0 && !showAll && (
+          <div className='gallery-show-all'>
+            <button
+              type='button'
+              className='gallery-show-all-button'
+              onClick={() => setShowAll(true)}
+            >
+              Show all photographs ({featuredImages.length + remainingImages.length})
+            </button>
+          </div>
+        )}
         {/* CTA */}
         <div className='call-to-action'>
           <a
@@ -153,8 +117,7 @@ const Gallery = () => {
             <img
               src={LeftArrowIcon}
               className='action-arrow-icon action-arrow left-arrow'
-              alt='
-                  onClick={toggleFullscreen}arrow-icon'
+              alt=''
               // style={{ transform: "rotate(-180deg)" }}
             />
           </a>
@@ -181,7 +144,7 @@ const Gallery = () => {
             <img
               src={ArrowIcon}
               className='action-arrow-icon action-arrow'
-              alt='arrow-icon'
+              alt=''
             />
           </a>
         </div>

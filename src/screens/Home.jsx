@@ -1,11 +1,14 @@
 import Navbar from '../components/Navbar';
 import Slider from '../components/Slider';
+import usePageMeta from '../seo/usePageMeta';
 
 import YoupicIcon from '../assets/icons/296377_OkiZZbJi0qz7PGcI_85399-removebg-preview.png';
 import px500Icon from '../assets/icons/500px-90.png';
 import GridIcon from '../assets/icons/grid-90.png';
 
 const Home = () => {
+  usePageMeta('/');
+
   return (
     <div className='home-slider'>
       {/* Navbar */}
@@ -17,6 +20,14 @@ const Home = () => {
           {/* <Slider /> */}
           <Slider />
         </div>
+      </div>
+      {/* Hero identity */}
+      <div className='hero-identity'>
+        <h1 className='hero-name'>Nitesh Nagpal</h1>
+        <p className='hero-role'>Wildlife Photographer</p>
+        <a href='/gallery' className='hero-cta'>
+          View wildlife gallery
+        </a>
       </div>
       {/* Details Section */}
       {/* <div className="main-text">
@@ -80,7 +91,7 @@ const Home = () => {
               <span className='label'>
                 <img
                   src={YoupicIcon}
-                  alt='view gallery'
+                  alt='YouPic'
                   className='youpic-img social-icon-img'
                 />
                 {/* <i class="fa-brands fa-facebook-f social-icon-img"></i> */}
@@ -95,6 +106,7 @@ const Home = () => {
           {/* Instagram */}
           <a
             href='https://www.instagram.com/nnphotography.in/'
+            aria-label='Instagram'
             target='_blank'
             rel='noreferrer'
           >
@@ -117,6 +129,7 @@ const Home = () => {
           {/* Facebook */}
           <a
             href='https://www.facebook.com/nnphotography09'
+            aria-label='Facebook'
             target='_blank'
             rel='noreferrer'
           >
@@ -139,6 +152,7 @@ const Home = () => {
           {/* Twitter */}
           <a
             href='https://twitter.com/_niteshnagpal_'
+            aria-label='Twitter'
             target='_blank'
             rel='noreferrer'
           >
@@ -169,7 +183,7 @@ const Home = () => {
               <span className='label'>
                 <img
                   src={px500Icon}
-                  alt='view gallery'
+                  alt='500px'
                   className='px500_icon social-icon-img'
                 />
                 {/* <i class="fa-brands fa-instagram social-icon-img"></i> */}

@@ -5,16 +5,19 @@ import HeaderImg from "../assets/images/DSC_2725.jpeg";
 import HeaderImg2 from "../assets/images/DSC_9885.jpg";
 import PageHeader from "../components/PageHeader";
 import Footer from "../components/Footer";
+import usePageMeta from "../seo/usePageMeta";
 
 import MyImg from "../assets/nitesh_nagpal.jpg";
 
 const About = () => {
+  usePageMeta("/about-me");
+
   return (
     <div className="gallery">
       <Navbar activeMenu="About" />
       <div className="overlay"></div>
       <div className="banner">
-        <img src={HeaderImg} alt="Background" />
+        <img src={HeaderImg} alt="" />
       </div>
       {/* TODO: parallax background with overlay */}
       <div className="gallery-page-header">
@@ -39,38 +42,34 @@ const About = () => {
       {/* About Me */}
       <div className="about-me">
         <div className="my-photo">
-          <img src={MyImg} alt="Nitesh Nagpal" />
+          <img src={MyImg} alt="Portrait of Nitesh Nagpal" />
         </div>
         <div className="about-me-text">
           <div>
             <p>
-              I'm more than just a full-stack developer with four years of
-              professional experience; I'm a storyteller who captures life's
-              most breathtaking moments through the lens of my camera. When I'm
-              not coding, you can find me immersed in the world of nature and
-              wildlife photography, where every click of the shutter is an
-              opportunity to freeze time and preserve the beauty of our planet.
+              I'm Nitesh Nagpal, and I photograph wildlife and nature. It
+              started with a Nikon D3200, the camera I learned on, and grew
+              into the habit of heading outdoors whenever I can to watch
+              animals on their own terms.
+            </p>
+            {/* TODO(Nitesh): optional. If you want a specific field moment
+                here (the first animal or place that hooked you), write it in
+                your own words. Nothing has been filled in on your behalf. */}
+            <p>
+              I shoot stills on the D3200 and film on a Sony Handycam. What I
+              enjoy most is the waiting: staying still long enough that an
+              animal stops noticing me and goes back to being itself.
             </p>
             <p>
-              My photography journey began with a Nikon D3200, a faithful
-              companion that has seen me through countless adventures. But it
-              doesn't end there – I also wield a Sony Handycam to capture moving
-              images, allowing me to explore the dynamic narratives that unfold
-              in the natural world.
+              Outside photography I've worked as a full-stack developer for 7+
+              years, and the time spent photographing wildlife in the field is
+              why I founded{' '}
+              <a href="https://wildsnap.in" target="_blank" rel="noreferrer">
+                WildSnap
+              </a>
+              , an AI tool for identifying wildlife.
             </p>
-            <p>
-              My passion for photography is deeply rooted in my love for the
-              outdoors, a place where I can connect with the tranquility of
-              nature and the majesty of wildlife. Each image I capture is a
-              story waiting to be shared, an emotion waiting to be felt.
-            </p>
-            <p>
-              Join me on this visual journey as we explore the world through my
-              lens. Together, we'll witness the beauty of nature and the wonders
-              of wildlife, framed in pixels and preserved for eternity.
-            </p>
-            <p>Thank you for being a part of my photographic adventure.</p>
-            <p>Warm regards,</p>
+            <p>Thank you for looking.</p>
             <p>Nitesh Nagpal</p>
           </div>
         </div>

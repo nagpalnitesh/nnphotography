@@ -5,54 +5,40 @@ import HeaderImg from "../assets/images/DSC_2725.jpeg";
 import HeaderImg2 from "../assets/images/DSC_9885.jpg";
 import PageHeader from "../components/PageHeader";
 import Footer from "../components/Footer";
+import { CONTACT_EMAIL, sendContactMessage } from "../utils/contact";
+import usePageMeta from "../seo/usePageMeta";
 
+const EMPTY_FORM = {
+  first_name: "",
+  last_name: "",
+  email: "",
+  phone: "",
+  subject: "",
+  message: "",
+};
+
+// status: "idle" | "sending" | "success" | "error"
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    first_name: "",
-    last_name: "",
-    email: "",
-    phone: "",
-    subject: "",
-    message: "",
-  });
+  usePageMeta("/contact-me");
+  const [formData, setFormData] = useState(EMPTY_FORM);
+  const [status, setStatus] = useState("idle");
 
   const handleChange = (text) => (e) => {
-    // const { name, value } = e.target;
     setFormData({ ...formData, [text]: e.target.value });
+    if (status === "success") setStatus("idle");
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    if (status === "sending") return;
+    setStatus("sending");
     try {
-      const response = await fetch(
-        "https://backend.nnphotography.in/send-email",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
-
-      if (response.ok) {
-        setFormData({
-          first_name: "",
-          last_name: "",
-          email: "",
-          phone: "",
-          subject: "",
-          message: "",
-        });
-        // Handle success, e.g., show a success message.
-      } else {
-        console.error("Error sending email");
-        // Handle error, e.g., show an error message.
-      }
+      await sendContactMessage(formData);
+      setFormData(EMPTY_FORM);
+      setStatus("success");
     } catch (error) {
       console.error("Error sending email", error);
-      // Handle error, e.g., show an error message.
+      setStatus("error");
     }
   };
 
@@ -60,12 +46,14 @@ const Contact = () => {
     return formData.email.trim() !== "";
   };
 
+  const sending = status === "sending";
+
   return (
     <div className="gallery">
       <Navbar activeMenu="Contact" />
       <div className="overlay"></div>
       <div className="banner">
-        <img src={HeaderImg} alt="Backgrounds" />
+        <img src={HeaderImg} alt="" />
       </div>
       {/* TODO: parallax background with overlay */}
       <div className="gallery-page-header">
@@ -88,10 +76,10 @@ const Contact = () => {
         <div className="e-text">
           Email:{" "}
           <a
-            href="mailto:niteshnagpalphotography@gmail.com"
+            href={`mailto:${CONTACT_EMAIL}`}
             className="footer-social-link w-inline-bock "
           >
-            <div className="email-text">niteshnagpalphotography@gmail.com</div>
+            <div className="email-text">{CONTACT_EMAIL}</div>
             <div className="underline footer-social-underline"></div>
           </a>
         </div>
@@ -99,18 +87,19 @@ const Contact = () => {
 
       {/* COntact FORM */}
       <div className="contact-form">
-        <form className="form" onSubmit={handleSubmit}>
+        <form className="form" onSubmit={handleSubmit} aria-busy={sending}>
           <p className="field required half">
             <input
               className="text-input"
               id="first-name"
               name="first-name"
-              required="<%= true %>"
+              required
               type="text"
+              autoComplete="given-name"
               value={formData.first_name}
               onChange={handleChange("first_name")}
             />
-            <label className="label required" htmlFor="name">
+            <label className="label required" htmlFor="first-name">
               First Name (required)
             </label>
           </p>
@@ -121,10 +110,11 @@ const Contact = () => {
               name="last-name"
               value={formData.last_name}
               onChange={handleChange("last_name")}
-              required="<%= true %>"
+              required
               type="text"
+              autoComplete="family-name"
             ></input>
-            <label className="label required" htmlFor="name">
+            <label className="label required" htmlFor="last-name">
               Last Name (required)
             </label>
           </p>
@@ -140,6 +130,7 @@ const Contact = () => {
               name="email"
               required
               type="email"
+              autoComplete="email"
               value={formData.email}
               onChange={handleChange("email")}
             ></input>
@@ -147,33 +138,32 @@ const Contact = () => {
               E-mail (required)
             </label>
           </p>
-          <p className="field required half">
+          <p className="field optional half">
             <input
               className="text-input"
               id="phone-number"
               name="phone-number"
-              required="<%= true %>"
               type="tel"
+              autoComplete="tel"
+              placeholder=" "
               value={formData.phone}
               onChange={handleChange("phone")}
             ></input>
             <label className="label" htmlFor="phone-number">
-              Phone Number
+              Phone Number (optional)
             </label>
           </p>
           <p className="field">
             <input
               className="textarea"
-              // cols="50"
               id="subject"
               name="subject"
-              required="<%= true %>"
-              // rows="4"
+              required
               value={formData.subject}
               onChange={handleChange("subject")}
             />
             <label className="label" htmlFor="subject">
-              Subject
+              Subject (required)
             </label>
           </p>
           <p className="field">
@@ -182,21 +172,35 @@ const Contact = () => {
               cols="50"
               id="message"
               name="message"
-              required="<%= true %>"
+              required
               rows="4"
               value={formData.message}
               onChange={handleChange("message")}
             ></textarea>
             <label className="label" htmlFor="message">
-              Message
+              Message (required)
             </label>
           </p>
+          <div className="form-status-wrapper">
+            <p className="form-status" role="status" aria-live="polite">
+              {sending && "Sending your message…"}
+              {status === "success" &&
+                "Thank you, your message has been sent. I'll get back to you soon."}
+            </p>
+            <p className="form-status form-status-error" role="alert">
+              {status === "error" && (
+                <>
+                  Sorry, your message couldn't be sent. Your text is still
+                  here, so you can try again or email me directly at{" "}
+                  <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
+                </>
+              )}
+            </p>
+          </div>
           <p className="field">
-            <input
-              className="button"
-              type="submit"
-              value="Send message"
-            ></input>
+            <button className="button" type="submit" disabled={sending}>
+              {sending ? "Sending…" : "Send message"}
+            </button>
           </p>
         </form>
       </div>
