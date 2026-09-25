@@ -46,14 +46,14 @@ const Lightbox = ({ image, onClose }) => {
       >
         &times;
       </button>
-      <a
+      {/* <a
         className='lightbox-original'
         href={image.src}
         target='_blank'
         rel='noreferrer'
       >
         Open full-resolution original
-      </a>
+      </a> */}
     </div>
   );
 };
