@@ -1,11 +1,14 @@
 import Navbar from '../components/Navbar';
 import Slider from '../components/Slider';
+import usePageMeta from '../seo/usePageMeta';
 
 import YoupicIcon from '../assets/icons/296377_OkiZZbJi0qz7PGcI_85399-removebg-preview.png';
 import px500Icon from '../assets/icons/500px-90.png';
 import GridIcon from '../assets/icons/grid-90.png';
 
 const Home = () => {
+  usePageMeta('/');
+
   return (
     <div className='home-slider'>
       {/* Navbar */}

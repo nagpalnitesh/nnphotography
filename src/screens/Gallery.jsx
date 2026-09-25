@@ -11,12 +11,14 @@ import GalleryCard from '../components/GalleryCard';
 import Lightbox from '../components/Lightbox';
 import PageHeader from '../components/PageHeader';
 import { featuredImages, remainingImages } from '../data/gallery';
+import usePageMeta from '../seo/usePageMeta';
 
 // The first desktop row can be in view on load, so those images load eagerly;
 // everything after it is lazy-loaded.
 const EAGER_COUNT = 3;
 
 const Gallery = () => {
+  usePageMeta('/gallery');
   const [selected, setSelected] = useState(null);
   const [showAll, setShowAll] = useState(false);
   const openerRef = useRef(null);

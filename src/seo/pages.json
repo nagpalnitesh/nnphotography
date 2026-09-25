@@ -1,0 +1,56 @@
+{
+  "_readme": "Per-route metadata. scripts/prerender-meta.mjs writes it into the built HTML for each route (so crawlers and link previews see it); usePageMeta keeps document.title in sync client-side. Preview images are real photos sent through cld(src, 1200).",
+  "siteUrl": "https://nnphotography.in",
+  "siteName": "NN Photography",
+  "twitterSite": "@_niteshnagpal_",
+  "pages": [
+    {
+      "path": "/",
+      "file": "index.html",
+      "title": "Nitesh Nagpal | Wildlife Photographer | NN Photography",
+      "description": "Wildlife and nature photography by Nitesh Nagpal. Browse the gallery, read the story behind the camera, or get in touch.",
+      "image": {
+        "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1784918900/NNPhotography/slider/DSC_9448_b2b6ig.jpg",
+        "width": 6016,
+        "height": 4000,
+        "alt": "Maned lion resting in grass with its eyes half closed"
+      }
+    },
+    {
+      "path": "/gallery",
+      "file": "gallery.html",
+      "title": "Wildlife Photography Gallery | NN Photography",
+      "description": "A curated gallery of wildlife photographs by Nitesh Nagpal: tigers, a leopard, lions, birds, monkeys and more.",
+      "image": {
+        "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1711876927/NNPhotography/slider/z6lpqtsxiq8ohl4wbhwx.jpg",
+        "width": 4000,
+        "height": 2251,
+        "alt": "Tiger in water with only its head and shoulders showing"
+      }
+    },
+    {
+      "path": "/about-me",
+      "file": "about-me.html",
+      "title": "About Nitesh Nagpal | NN Photography",
+      "description": "How Nitesh Nagpal got into wildlife and nature photography, starting with a Nikon D3200.",
+      "image": {
+        "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1784918906/NNPhotography/slider/DSC_4981_qda0tg.jpg",
+        "width": 6016,
+        "height": 4000,
+        "alt": "Close-up of a green crested bird with a red-ringed eye and a red bill"
+      }
+    },
+    {
+      "path": "/contact-me",
+      "file": "contact-me.html",
+      "title": "Contact Nitesh Nagpal | NN Photography",
+      "description": "Get in touch with Nitesh Nagpal about his wildlife photography or working together.",
+      "image": {
+        "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1711876929/NNPhotography/slider/Rose%20Pelican%20Swim.jpg",
+        "width": 2613,
+        "height": 1737,
+        "alt": "Pale pink pelican swimming beside a round stepping stone"
+      }
+    }
+  ]
+}

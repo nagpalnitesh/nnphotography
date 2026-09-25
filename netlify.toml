@@ -1,3 +1,12 @@
+# Serve the real XML sitemap with an XML content type.
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=utf-8"
+
+# SPA fallback. force = false means existing files win, so /sitemap.xml,
+# /robots.txt and the prerendered /gallery, /about-me and /contact-me pages
+# (gallery.html etc., written by scripts/prerender-meta.mjs) are served as-is.
 [[redirects]]
   from = "/*"
   to = "/index.html"

@@ -6,6 +6,7 @@ import HeaderImg2 from "../assets/images/DSC_9885.jpg";
 import PageHeader from "../components/PageHeader";
 import Footer from "../components/Footer";
 import { CONTACT_EMAIL, sendContactMessage } from "../utils/contact";
+import usePageMeta from "../seo/usePageMeta";
 
 const EMPTY_FORM = {
   first_name: "",
@@ -18,6 +19,7 @@ const EMPTY_FORM = {
 
 // status: "idle" | "sending" | "success" | "error"
 const Contact = () => {
+  usePageMeta("/contact-me");
   const [formData, setFormData] = useState(EMPTY_FORM);
   const [status, setStatus] = useState("idle");
 

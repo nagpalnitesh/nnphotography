@@ -5,10 +5,13 @@ import HeaderImg from "../assets/images/DSC_2725.jpeg";
 import HeaderImg2 from "../assets/images/DSC_9885.jpg";
 import PageHeader from "../components/PageHeader";
 import Footer from "../components/Footer";
+import usePageMeta from "../seo/usePageMeta";
 
 import MyImg from "../assets/nitesh_nagpal.jpg";
 
 const About = () => {
+  usePageMeta("/about-me");
+
   return (
     <div className="gallery">
       <Navbar activeMenu="About" />
