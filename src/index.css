@@ -1,5 +1,5 @@
 /* Font Used */
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Lora&family=Quattrocento&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Lora&family=Quattrocento&display=swap');
 
 /* 
 font-family: 'Cinzel', serif; //heading
@@ -62,7 +62,7 @@ font-family: 'Quattrocento', serif; //subheading
   justify-content: center;
   align-items: center;
   -webkit-box-align: center;
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
 }
 
 .content {
@@ -87,7 +87,7 @@ body {
 }
 
 p {
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
 }
 
 .header {
@@ -111,7 +111,7 @@ p {
   font-weight: 600;
   margin-left: 1.5em;
   text-align: center;
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
 }
 
 .nav-link:hover {
@@ -142,7 +142,7 @@ p {
   color: black;
   font-size: 16px;
   /* margin: 0 10px; */
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
 }
 
 .nav-link:hover .nav-link-underline {
@@ -237,7 +237,7 @@ a:hover {
   text-transform: uppercase;
   width: 250px;
   text-align: center;
-  font-family: "Quattrocento", serif;
+  font-family: 'Quattrocento', serif;
   letter-spacing: 0.1em;
 }
 
@@ -285,7 +285,7 @@ a:hover {
 /* Bottom scrim keeps the hero text readable on every slide without tinting
    the subject, which sits in the middle of the frame. */
 .home-slider::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   right: 0;
@@ -308,7 +308,7 @@ a:hover {
 
 .hero-name {
   margin: 0;
-  font-family: "Cinzel", serif;
+  font-family: 'Cinzel', serif;
   font-weight: 500;
   font-size: clamp(1.75rem, 4vw, 3rem);
   letter-spacing: 0.12em;
@@ -317,7 +317,7 @@ a:hover {
 
 .hero-role {
   margin: 0.4em 0 1.2em;
-  font-family: "Quattrocento", serif;
+  font-family: 'Quattrocento', serif;
   font-size: clamp(0.85rem, 1.6vw, 1.1rem);
   letter-spacing: 0.3em;
   text-transform: uppercase;
@@ -328,13 +328,15 @@ a:hover {
   padding: 0.75em 1.5em;
   border: 1px solid #fff;
   color: #fff;
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
   font-size: 0.95rem;
   letter-spacing: 0.08em;
   text-decoration: none;
   text-shadow: none;
   background: rgba(0, 0, 0, 0.35);
-  transition: background 200ms ease, color 200ms ease;
+  transition:
+    background 200ms ease,
+    color 200ms ease;
 }
 
 .hero-cta:hover,
@@ -728,7 +730,7 @@ a:hover {
   height: 100%;
   padding: 90px 0 0 0;
   color: white;
-  font-family: "Cinzel", serif;
+  font-family: 'Cinzel', serif;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -739,11 +741,11 @@ a:hover {
   font-size: 24px;
   line-height: 36px;
   text-transform: uppercase;
-  font-family: "Quattrocento", serif;
+  font-family: 'Quattrocento', serif;
 }
 
 .gallery-section-text p {
-  font-family: "Quattrocento", serif;
+  font-family: 'Quattrocento', serif;
 }
 
 .gallery-section-text hr {
@@ -827,12 +829,12 @@ figure.gallery-card {
   flex-direction: column;
   gap: 2px;
   padding: 12px 15px 0;
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
   color: var(--blackColor);
 }
 
 .gallery-caption-title {
-  font-family: "Quattrocento", serif;
+  font-family: 'Quattrocento', serif;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -853,7 +855,7 @@ figure.gallery-card {
   border: 1px solid var(--blackColor);
   background: transparent;
   color: var(--blackColor);
-  font-family: "Quattrocento", serif;
+  font-family: 'Quattrocento', serif;
   text-transform: uppercase;
   letter-spacing: 0.14em;
   cursor: pointer;
@@ -898,7 +900,8 @@ figure.gallery-card {
   z-index: 1;
 }
 .action-text-style {
-  transform: translate3d(0px, 24px, 0px),
+  transform:
+    translate3d(0px, 24px, 0px),
     scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
 }
@@ -930,7 +933,7 @@ h5 {
   color: black;
   font-size: 14px;
   /* margin: 0 10px; */
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
 }
 
 .footer-link {
@@ -1062,7 +1065,7 @@ h5 {
 }
 
 .form.has-floated-label .field:after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1152,7 +1155,7 @@ textarea:valid + label {
 
 .form-status {
   margin: 0 0 1em;
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
   font-size: 1rem;
   line-height: 1.5;
   overflow-wrap: anywhere;
@@ -1249,6 +1252,7 @@ textarea:valid + label {
   height: 550px;
   box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
   border-radius: 0.5em;
+  margin: 10px 0;
 }
 
 .about-me-text {
@@ -1324,7 +1328,7 @@ textarea:valid + label {
   left: 50%;
   transform: translateX(-50%);
   color: var(--whiteColor);
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
   font-size: 0.9rem;
 }
 
