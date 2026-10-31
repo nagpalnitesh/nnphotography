@@ -23,6 +23,19 @@ describe('Gallery', () => {
     global.fetch = originalFetch;
   });
 
+  it('shows skeleton placeholders until the photographs arrive', async () => {
+    global.fetch = jest.fn().mockResolvedValue({
+      ok: true,
+      status: 200,
+      json: () => Promise.resolve(apiImages),
+    });
+    const { container } = render(<Gallery />);
+    expect(container.querySelector('.gallery-skeleton')).toBeInTheDocument();
+
+    await screen.findByRole('button', { name: 'Show all photographs' });
+    expect(container.querySelector('.gallery-skeleton')).not.toBeInTheDocument();
+  });
+
   it('shows every photograph the API returns, including past 100', async () => {
     global.fetch = jest.fn().mockResolvedValue({
       ok: true,
@@ -69,9 +82,10 @@ describe('Gallery', () => {
 
   it('tells the visitor when the API cannot be reached', async () => {
     global.fetch = jest.fn().mockRejectedValue(new Error('network'));
-    render(<Gallery />);
+    const { container } = render(<Gallery />);
 
     expect(await screen.findByText(/couldn't be loaded/)).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /^View larger:/ })).not.toBeInTheDocument();
+    expect(container.querySelector('.gallery-skeleton')).not.toBeInTheDocument();
   });
 });
