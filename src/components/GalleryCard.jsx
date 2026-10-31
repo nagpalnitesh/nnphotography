@@ -1,17 +1,20 @@
 import { captionFor } from '../data/gallery';
 import { cld, cldSrcSet } from '../utils/cloudinary';
 
-// Matches the grid in index.css: cards are 370px wide on desktop and fill the
-// row on phones (<=600px), where .gallery-section has 1em padding and each
-// .gallery-list-item has 10px side padding.
-export const GALLERY_SIZES = '(max-width: 600px) calc(100vw - 52px), 370px';
+// Rows in index.css are justified: each card keeps its photo's aspect ratio, so
+// nothing is cropped, and rows grow to at most MAX_ROW_HEIGHT tall. Phones
+// (<=600px) get one full-width column inside .gallery-section's 1em padding.
+const MAX_ROW_HEIGHT = 420;
+const gallerySizes = (ratio) =>
+  `(max-width: 600px) calc(100vw - 32px), ${Math.round(ratio * MAX_ROW_HEIGHT)}px`;
 
 const GalleryCard = ({ image, eager = false, onOpen }) => {
   const { title, location, story } = captionFor(image);
   const hasCaption = title || location || story;
+  const ratio = image.width / image.height;
 
   return (
-    <li className='gallery-list-item'>
+    <li className='gallery-list-item' style={{ '--photo-ratio': ratio }}>
       <figure className='gallery-card'>
         <button
           type='button'
@@ -22,7 +25,7 @@ const GalleryCard = ({ image, eager = false, onOpen }) => {
           <img
             src={cld(image.src, 800)}
             srcSet={cldSrcSet(image.src)}
-            sizes={GALLERY_SIZES}
+            sizes={gallerySizes(ratio)}
             width={image.width}
             height={image.height}
             alt={image.alt}

@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import Navbar from '../components/Navbar';
 
 import ArrowIcon from '../assets/icons/arrow-90.png';
@@ -10,18 +10,37 @@ import Footer from '../components/Footer';
 import GalleryCard from '../components/GalleryCard';
 import Lightbox from '../components/Lightbox';
 import PageHeader from '../components/PageHeader';
-import { featuredImages, remainingImages } from '../data/gallery';
+import { fetchGallery } from '../data/gallery';
 import usePageMeta from '../seo/usePageMeta';
 
 // The first desktop row can be in view on load, so those images load eagerly;
 // everything after it is lazy-loaded.
 const EAGER_COUNT = 3;
+const EMPTY_GALLERY = { featuredImages: [], remainingImages: [] };
 
 const Gallery = () => {
   usePageMeta('/gallery');
+  const [gallery, setGallery] = useState(null);
+  const [loadFailed, setLoadFailed] = useState(false);
   const [selected, setSelected] = useState(null);
   const [showAll, setShowAll] = useState(false);
   const openerRef = useRef(null);
+  const { featuredImages, remainingImages } = gallery ?? EMPTY_GALLERY;
+
+  useEffect(() => {
+    let cancelled = false;
+    fetchGallery()
+      .then((result) => {
+        if (!cancelled) setGallery(result);
+      })
+      .catch((error) => {
+        console.error('Error fetching gallery:', error);
+        if (!cancelled) setLoadFailed(true);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   const openImage = useCallback((image, opener) => {
     openerRef.current = opener;
@@ -69,6 +88,13 @@ const Gallery = () => {
         {/* Display Image in FullView */}
         <Lightbox image={selected} onClose={closeImage} />
         {/* Gallery Section */}
+        {!gallery && (
+          <p className='gallery-show-all' role='status'>
+            {loadFailed
+              ? "The gallery couldn't be loaded. Please refresh the page to try again."
+              : 'Loading photographs…'}
+          </p>
+        )}
         <ul className='gallery-section'>
           {featuredImages.map((image, index) => (
             <GalleryCard
@@ -90,7 +116,7 @@ const Gallery = () => {
               className='gallery-show-all-button'
               onClick={() => setShowAll(true)}
             >
-              Show all photographs ({featuredImages.length + remainingImages.length})
+              Show all photographs
             </button>
           </div>
         )}
