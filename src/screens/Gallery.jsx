@@ -8,6 +8,7 @@ import HeaderImg3 from '../assets/images/DSC_9634.jpg';
 import HeaderImg2 from '../assets/images/DSC_9885.jpg';
 import Footer from '../components/Footer';
 import GalleryCard from '../components/GalleryCard';
+import GallerySkeleton from '../components/GallerySkeleton';
 import Lightbox from '../components/Lightbox';
 import PageHeader from '../components/PageHeader';
 import { fetchGallery } from '../data/gallery';
@@ -89,13 +90,17 @@ const Gallery = () => {
         <Lightbox image={selected} onClose={closeImage} />
         {/* Gallery Section */}
         {!gallery && (
-          <p className='gallery-show-all' role='status'>
+          <p
+            className={loadFailed ? 'gallery-show-all' : 'visually-hidden'}
+            role='status'
+          >
             {loadFailed
               ? "The gallery couldn't be loaded. Please refresh the page to try again."
               : 'Loading photographs…'}
           </p>
         )}
         <ul className='gallery-section'>
+          {!gallery && !loadFailed && <GallerySkeleton />}
           {featuredImages.map((image, index) => (
             <GalleryCard
               key={image.id}

@@ -826,6 +826,45 @@ figure.gallery-card {
   outline-offset: 4px;
 }
 
+.gallery-skeleton {
+  width: 100%;
+  aspect-ratio: var(--photo-ratio);
+  border-radius: 10px;
+  background: linear-gradient(
+      100deg,
+      transparent 30%,
+      rgba(255, 255, 255, 0.5) 50%,
+      transparent 70%
+    )
+    0 0 / 200% 100% no-repeat rgba(57, 62, 70, 0.14);
+  animation: gallerySkeletonShimmer 1.6s linear infinite;
+}
+
+@keyframes gallerySkeletonShimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gallery-skeleton {
+    animation: none;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 .gallery-caption {
   display: flex;
   flex-direction: column;
