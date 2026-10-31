@@ -1,3 +1,8 @@
+# Build on Node 22, which Netlify Agent Runners need and package.json's
+# engines range allows.
+[build.environment]
+  NODE_VERSION = "22"
+
 # Serve the real XML sitemap with an XML content type.
 [[headers]]
   for = "/sitemap.xml"
