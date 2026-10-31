@@ -1,38 +1,15 @@
 {
   "_readme": [
-    "Gallery data. Edit this file to change what the gallery shows; no component changes needed.",
-    "\"featured\": image IDs shown first, in this order. PROVISIONAL selection awaiting Nitesh’s approval.",
-    "\"showRemaining\": when true, a \"Show all photographs\" button reveals every other image below, in \"images\" order.",
+    "Gallery metadata, keyed by Cloudinary id. The photographs themselves (URLs and dimensions) come from the /api/gallery response at runtime; this file only adds what the API cannot provide. Photos with no entry here still appear, with a generic alt text and no caption.",
+    "Featured photos are chosen by Cloudinary folder: anything in the \"featured\" folder is shown first, in API order. Move a photo in or out of that folder to change them.",
+    "\"showRemaining\": when true, a \"Show all photographs\" button reveals every other image below, in API order.",
     "Caption fields starting with \"TODO:\" are never rendered. Replace them with verified text to publish a caption.",
     "\"alt\" was written from visual inspection only (no species inferred from filenames). Nitesh: please review."
-  ],
-  "featured": [
-    "DSC_6482_ep3fh4",
-    "C6C92503-4C0E-486E-8F35-AC396A2061D9_wddqzb",
-    "DSC_3861_xkw3jw",
-    "DSC_6678_hoiik0",
-    "DSC_5250_py0j3b",
-    "DSC_3362_fqg46h",
-    "DSC_3606_cndvyq",
-    "FullSizeRender_rawacs",
-    "DSC_6579_kky00r",
-    "DSC_2887_bn3nku",
-    "DSC_7394_mnjcc9",
-    "DSC_3645_gz1ilt",
-    "DSC_8392_jihxqn",
-    "DSC_2735_osblay",
-    "DSC_6420_rcjdvx",
-    "DSC_2624_tm5dyv",
-    "DSC_7107_hobzm4",
-    "DSC_2715_l7up0m"
   ],
   "showRemaining": true,
   "images": [
     {
       "id": "IMG_3808_gf5hsx",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1787079051/NNPhotography/gallery-new/Uploads/IMG_3808_gf5hsx.jpg",
-      "width": 2178,
-      "height": 3872,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -40,9 +17,6 @@
     },
     {
       "id": "IMG_3789_j5szpd",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1787079048/NNPhotography/gallery-new/Uploads/IMG_3789_j5szpd.jpg",
-      "width": 2268,
-      "height": 4032,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -50,9 +24,6 @@
     },
     {
       "id": "DSC_3544_u01jt5",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1787078807/NNPhotography/gallery-new/Uploads/DSC_3544_u01jt5.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -60,9 +31,6 @@
     },
     {
       "id": "IMG_7797_vyg528",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1784918415/NNPhotography/gallery-new/Uploads/IMG_7797_vyg528.jpg",
-      "width": 2268,
-      "height": 4032,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -70,9 +38,6 @@
     },
     {
       "id": "DSC_3351_a7hm4x",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1784918284/NNPhotography/gallery-new/Uploads/DSC_3351_a7hm4x.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -80,9 +45,6 @@
     },
     {
       "id": "DSC_3341_ytw16x",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1784918181/NNPhotography/gallery-new/Uploads/DSC_3341_ytw16x.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -90,9 +52,6 @@
     },
     {
       "id": "DSC_0090_ackosp",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1761421560/NNPhotography/gallery-new/Uploads/DSC_0090_ackosp.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -100,9 +59,6 @@
     },
     {
       "id": "C6C92503-4C0E-486E-8F35-AC396A2061D9_wddqzb",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1761421558/NNPhotography/gallery-new/Uploads/C6C92503-4C0E-486E-8F35-AC396A2061D9_wddqzb.jpg",
-      "width": 3324,
-      "height": 3324,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -110,9 +66,6 @@
     },
     {
       "id": "DSC_3567_giqbpm",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544782/NNPhotography/gallery-new/Uploads/DSC_3567_giqbpm.jpg",
-      "width": 4571,
-      "height": 3039,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -120,9 +73,6 @@
     },
     {
       "id": "DSC_3246_kgtaeg",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544776/NNPhotography/gallery-new/Uploads/DSC_3246_kgtaeg.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -130,9 +80,6 @@
     },
     {
       "id": "DSC_3023_shpsl9",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544774/NNPhotography/gallery-new/Uploads/DSC_3023_shpsl9.jpg",
-      "width": 6016,
-      "height": 4000,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -140,9 +87,6 @@
     },
     {
       "id": "DSC_4123_sbsorv",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544774/NNPhotography/gallery-new/Uploads/DSC_4123_sbsorv.jpg",
-      "width": 6016,
-      "height": 4000,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -150,9 +94,6 @@
     },
     {
       "id": "DSC_3362_fqg46h",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544773/NNPhotography/gallery-new/Uploads/DSC_3362_fqg46h.jpg",
-      "width": 3653,
-      "height": 5373,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -160,9 +101,6 @@
     },
     {
       "id": "DSC_3342_ojdcne",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544774/NNPhotography/gallery-new/Uploads/DSC_3342_ojdcne.jpg",
-      "width": 3405,
-      "height": 5121,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -170,9 +108,6 @@
     },
     {
       "id": "DSC_3861_xkw3jw",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544772/NNPhotography/gallery-new/Uploads/DSC_3861_xkw3jw.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -180,9 +115,6 @@
     },
     {
       "id": "DSC_3645_gz1ilt",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544772/NNPhotography/gallery-new/Uploads/DSC_3645_gz1ilt.jpg",
-      "width": 3154,
-      "height": 4743,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -190,9 +122,6 @@
     },
     {
       "id": "DSC_5317_mmpt8b",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544769/NNPhotography/gallery-new/Uploads/DSC_5317_mmpt8b.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -200,9 +129,6 @@
     },
     {
       "id": "FullSizeRender_rawacs",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544770/NNPhotography/gallery-new/Uploads/FullSizeRender_rawacs.jpg",
-      "width": 2928,
-      "height": 2928,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -210,9 +136,6 @@
     },
     {
       "id": "DSC_7627_y9qvnw",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544769/NNPhotography/gallery-new/Uploads/DSC_7627_y9qvnw.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -220,9 +143,6 @@
     },
     {
       "id": "DSC_5250_py0j3b",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544769/NNPhotography/gallery-new/Uploads/DSC_5250_py0j3b.jpg",
-      "width": 4000,
-      "height": 4000,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -230,9 +150,6 @@
     },
     {
       "id": "DSC_4140_zdhqzh",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544768/NNPhotography/gallery-new/Uploads/DSC_4140_zdhqzh.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -240,9 +157,6 @@
     },
     {
       "id": "DSC_5824_epmkvd",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544767/NNPhotography/gallery-new/Uploads/DSC_5824_epmkvd.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -250,9 +164,6 @@
     },
     {
       "id": "DSC_6482_ep3fh4",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544765/NNPhotography/gallery-new/Uploads/DSC_6482_ep3fh4.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -260,9 +171,6 @@
     },
     {
       "id": "DSC_5865_mvuayx",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544765/NNPhotography/gallery-new/Uploads/DSC_5865_mvuayx.jpg",
-      "width": 2633,
-      "height": 2633,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -270,9 +178,6 @@
     },
     {
       "id": "DSC_6420_rcjdvx",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544763/NNPhotography/gallery-new/Uploads/DSC_6420_rcjdvx.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -280,9 +185,6 @@
     },
     {
       "id": "DSC_6012_h2x43p",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544764/NNPhotography/gallery-new/Uploads/DSC_6012_h2x43p.jpg",
-      "width": 6016,
-      "height": 4000,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -290,9 +192,6 @@
     },
     {
       "id": "DSC_6477_lupqxg",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544762/NNPhotography/gallery-new/Uploads/DSC_6477_lupqxg.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -300,9 +199,6 @@
     },
     {
       "id": "IMG_0948_wwut9q",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544761/NNPhotography/gallery-new/Uploads/IMG_0948_wwut9q.jpg",
-      "width": 5712,
-      "height": 3213,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -310,9 +206,6 @@
     },
     {
       "id": "DSC_6466_jjgyse",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544759/NNPhotography/gallery-new/Uploads/DSC_6466_jjgyse.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -320,9 +213,6 @@
     },
     {
       "id": "DSC_6487_ubyjyv",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544758/NNPhotography/gallery-new/Uploads/DSC_6487_ubyjyv.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -330,9 +220,6 @@
     },
     {
       "id": "DSC_6678_hoiik0",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544757/NNPhotography/gallery-new/Uploads/DSC_6678_hoiik0.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -340,9 +227,6 @@
     },
     {
       "id": "DSC_6503_sqqw50",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544756/NNPhotography/gallery-new/Uploads/DSC_6503_sqqw50.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -350,9 +234,6 @@
     },
     {
       "id": "DSC_7261_v7rtqr",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544756/NNPhotography/gallery-new/Uploads/DSC_7261_v7rtqr.jpg",
-      "width": 4000,
-      "height": 4000,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -360,9 +241,6 @@
     },
     {
       "id": "DSC_6741_g6mm4s",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544756/NNPhotography/gallery-new/Uploads/DSC_6741_g6mm4s.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -370,9 +248,6 @@
     },
     {
       "id": "DSC_6579_kky00r",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544756/NNPhotography/gallery-new/Uploads/DSC_6579_kky00r.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -380,9 +255,6 @@
     },
     {
       "id": "DSC_7076_z0vuxs",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544751/NNPhotography/gallery-new/Uploads/DSC_7076_z0vuxs.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -390,9 +262,6 @@
     },
     {
       "id": "DSC_7394_mnjcc9",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544750/NNPhotography/gallery-new/Uploads/DSC_7394_mnjcc9.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -400,9 +269,6 @@
     },
     {
       "id": "DSC_6834_whqv8n",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544750/NNPhotography/gallery-new/Uploads/DSC_6834_whqv8n.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -410,9 +276,6 @@
     },
     {
       "id": "DSC_6851_rxvpq2",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544749/NNPhotography/gallery-new/Uploads/DSC_6851_rxvpq2.jpg",
-      "width": 4000,
-      "height": 4000,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -420,9 +283,6 @@
     },
     {
       "id": "DSC_7395_kimoqv",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544749/NNPhotography/gallery-new/Uploads/DSC_7395_kimoqv.jpg",
-      "width": 4000,
-      "height": 4000,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -430,9 +290,6 @@
     },
     {
       "id": "DSC_7882_kdcjwo",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1746544746/NNPhotography/gallery-new/Uploads/DSC_7882_kdcjwo.jpg",
-      "width": 4146,
-      "height": 2757,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -440,9 +297,6 @@
     },
     {
       "id": "DSC_2624_tm5dyv",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1714204746/NNPhotography/gallery-new/Uploads/DSC_2624_tm5dyv.jpg",
-      "width": 6016,
-      "height": 4000,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -450,9 +304,6 @@
     },
     {
       "id": "DSC_2715_l7up0m",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1714204744/NNPhotography/gallery-new/Uploads/DSC_2715_l7up0m.jpg",
-      "width": 2949,
-      "height": 4436,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -460,9 +311,6 @@
     },
     {
       "id": "DSC_8392_jihxqn",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943518/NNPhotography/gallery-new/DSC_8392_jihxqn.jpg",
-      "width": 6016,
-      "height": 4000,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -470,9 +318,6 @@
     },
     {
       "id": "IMG_7015_cwhcik",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943512/NNPhotography/gallery-new/IMG_7015_cwhcik.jpg",
-      "width": 2070,
-      "height": 2070,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -480,9 +325,6 @@
     },
     {
       "id": "DSC_E0582_m7zmo9",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943510/NNPhotography/gallery-new/DSC_E0582_m7zmo9.jpg",
-      "width": 2613,
-      "height": 1737,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -490,9 +332,6 @@
     },
     {
       "id": "DSC_18891_shwnx5",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943507/NNPhotography/gallery-new/DSC_18891_shwnx5.jpg",
-      "width": 4000,
-      "height": 2250,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -500,9 +339,6 @@
     },
     {
       "id": "DSC_9326_fn24qa",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943505/NNPhotography/gallery-new/DSC_9326_fn24qa.jpg",
-      "width": 6016,
-      "height": 4000,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -510,9 +346,6 @@
     },
     {
       "id": "DSC_9302_xvnlc4",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943502/NNPhotography/gallery-new/DSC_9302_xvnlc4.jpg",
-      "width": 5375,
-      "height": 3574,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -520,9 +353,6 @@
     },
     {
       "id": "DSC_9297_up8tvx",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943500/NNPhotography/gallery-new/DSC_9297_up8tvx.jpg",
-      "width": 3312,
-      "height": 4981,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -530,9 +360,6 @@
     },
     {
       "id": "DSC_9296_gvoup3",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943500/NNPhotography/gallery-new/DSC_9296_gvoup3.jpg",
-      "width": 3110,
-      "height": 4677,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -540,9 +367,6 @@
     },
     {
       "id": "DSC_9290_cvby15",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943498/NNPhotography/gallery-new/DSC_9290_cvby15.jpg",
-      "width": 3612,
-      "height": 5433,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -550,9 +374,6 @@
     },
     {
       "id": "DSC_9174_l4kztr",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943494/NNPhotography/gallery-new/DSC_9174_l4kztr.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -560,9 +381,6 @@
     },
     {
       "id": "DSC_9171_ookebp",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943492/NNPhotography/gallery-new/DSC_9171_ookebp.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -570,9 +388,6 @@
     },
     {
       "id": "DSC_9162_ifauhm",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943490/NNPhotography/gallery-new/DSC_9162_ifauhm.jpg",
-      "width": 3251,
-      "height": 4890,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -580,9 +395,6 @@
     },
     {
       "id": "DSC_9039_rbxsen",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943488/NNPhotography/gallery-new/DSC_9039_rbxsen.jpg",
-      "width": 5241,
-      "height": 3485,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -590,9 +402,6 @@
     },
     {
       "id": "DSC_9044_mzfb1w",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943488/NNPhotography/gallery-new/DSC_9044_mzfb1w.jpg",
-      "width": 6016,
-      "height": 4000,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -600,9 +409,6 @@
     },
     {
       "id": "DSC_9031_ooo4jk",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943484/NNPhotography/gallery-new/DSC_9031_ooo4jk.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -610,9 +416,6 @@
     },
     {
       "id": "DSC_8988_lt3sey",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943482/NNPhotography/gallery-new/DSC_8988_lt3sey.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -620,9 +423,6 @@
     },
     {
       "id": "DSC_8555_rjfk4l",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943482/NNPhotography/gallery-new/DSC_8555_rjfk4l.jpg",
-      "width": 4089,
-      "height": 2719,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -630,9 +430,6 @@
     },
     {
       "id": "DSC_8526_pstzge",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943480/NNPhotography/gallery-new/DSC_8526_pstzge.jpg",
-      "width": 3025,
-      "height": 4549,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -640,9 +437,6 @@
     },
     {
       "id": "DSC_8524_tribhd",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943476/NNPhotography/gallery-new/DSC_8524_tribhd.jpg",
-      "width": 3438,
-      "height": 5171,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -650,9 +444,6 @@
     },
     {
       "id": "DSC_8491_kafhpr",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943476/NNPhotography/gallery-new/DSC_8491_kafhpr.jpg",
-      "width": 2437,
-      "height": 3665,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -660,9 +451,6 @@
     },
     {
       "id": "DSC_8482_rfezbf",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943475/NNPhotography/gallery-new/DSC_8482_rfezbf.jpg",
-      "width": 3236,
-      "height": 3236,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -670,9 +458,6 @@
     },
     {
       "id": "DSC_8436_yg3oxy",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943471/NNPhotography/gallery-new/DSC_8436_yg3oxy.jpg",
-      "width": 6016,
-      "height": 4000,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -680,9 +465,6 @@
     },
     {
       "id": "DSC_8274_dd60d5",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943470/NNPhotography/gallery-new/DSC_8274_dd60d5.jpg",
-      "width": 5274,
-      "height": 3507,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -690,9 +472,6 @@
     },
     {
       "id": "DSC_8262_oauj8j",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943466/NNPhotography/gallery-new/DSC_8262_oauj8j.jpg",
-      "width": 5264,
-      "height": 2961,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -700,9 +479,6 @@
     },
     {
       "id": "DSC_8247_z7djah",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943464/NNPhotography/gallery-new/DSC_8247_z7djah.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -710,9 +486,6 @@
     },
     {
       "id": "DSC_8229_jnlkro",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943462/NNPhotography/gallery-new/DSC_8229_jnlkro.jpg",
-      "width": 5373,
-      "height": 3572,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -720,9 +493,6 @@
     },
     {
       "id": "DSC_8238_rv0gvv",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943462/NNPhotography/gallery-new/DSC_8238_rv0gvv.jpg",
-      "width": 6016,
-      "height": 4000,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -730,9 +500,6 @@
     },
     {
       "id": "DSC_8094_mmq8za",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943460/NNPhotography/gallery-new/DSC_8094_mmq8za.jpg",
-      "width": 4887,
-      "height": 3249,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -740,9 +507,6 @@
     },
     {
       "id": "DSC_7870_ark3dv",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943456/NNPhotography/gallery-new/DSC_7870_ark3dv.jpg",
-      "width": 5413,
-      "height": 3045,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -750,9 +514,6 @@
     },
     {
       "id": "DSC_7635_nsmh0w",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943454/NNPhotography/gallery-new/DSC_7635_nsmh0w.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -760,9 +521,6 @@
     },
     {
       "id": "DSC_7107_hobzm4",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943452/NNPhotography/gallery-new/DSC_7107_hobzm4.jpg",
-      "width": 3918,
-      "height": 2605,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -770,9 +528,6 @@
     },
     {
       "id": "DSC_6945_j3x7ei",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943452/NNPhotography/gallery-new/DSC_6945_j3x7ei.jpg",
-      "width": 3397,
-      "height": 5109,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -780,9 +535,6 @@
     },
     {
       "id": "DSC_6924_gc0ab1",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943450/NNPhotography/gallery-new/DSC_6924_gc0ab1.jpg",
-      "width": 3132,
-      "height": 3132,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -790,9 +542,6 @@
     },
     {
       "id": "DSC_4963_havp4a",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943446/NNPhotography/gallery-new/DSC_4963_havp4a.jpg",
-      "width": 6016,
-      "height": 4000,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -800,9 +549,6 @@
     },
     {
       "id": "DSC_4561_uf4wws",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943444/NNPhotography/gallery-new/DSC_4561_uf4wws.jpg",
-      "width": 6016,
-      "height": 4000,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -810,9 +556,6 @@
     },
     {
       "id": "DSC_3673_xmzebv",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943443/NNPhotography/gallery-new/DSC_3673_xmzebv.jpg",
-      "width": 3379,
-      "height": 5082,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -820,9 +563,6 @@
     },
     {
       "id": "DSC_3606_cndvyq",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943442/NNPhotography/gallery-new/DSC_3606_cndvyq.jpg",
-      "width": 3796,
-      "height": 3796,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -830,9 +570,6 @@
     },
     {
       "id": "DSC_3600_so2cfk",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943440/NNPhotography/gallery-new/DSC_3600_so2cfk.jpg",
-      "width": 2992,
-      "height": 4500,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -840,9 +577,6 @@
     },
     {
       "id": "DSC_3599_qndypr",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943437/NNPhotography/gallery-new/DSC_3599_qndypr.jpg",
-      "width": 3178,
-      "height": 4779,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -850,9 +584,6 @@
     },
     {
       "id": "DSC_3425_apqpij",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943435/NNPhotography/gallery-new/DSC_3425_apqpij.jpg",
-      "width": 2665,
-      "height": 2665,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -860,9 +591,6 @@
     },
     {
       "id": "DSC_3421_h9e1yp",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943433/NNPhotography/gallery-new/DSC_3421_h9e1yp.jpg",
-      "width": 5257,
-      "height": 2957,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -870,9 +598,6 @@
     },
     {
       "id": "DSC_3408_tuphv0",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943433/NNPhotography/gallery-new/DSC_3408_tuphv0.jpg",
-      "width": 2925,
-      "height": 2925,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -880,9 +605,6 @@
     },
     {
       "id": "DSC_3325_aucmtp",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943431/NNPhotography/gallery-new/DSC_3325_aucmtp.jpg",
-      "width": 3287,
-      "height": 4943,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -890,9 +612,6 @@
     },
     {
       "id": "DSC_3320_xpcszx",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943428/NNPhotography/gallery-new/DSC_3320_xpcszx.jpg",
-      "width": 3428,
-      "height": 5156,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -900,9 +619,6 @@
     },
     {
       "id": "DSC_3165_zjb1up",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943425/NNPhotography/gallery-new/DSC_3165_zjb1up.jpg",
-      "width": 3841,
-      "height": 2554,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -910,9 +626,6 @@
     },
     {
       "id": "DSC_2887_bn3nku",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943423/NNPhotography/gallery-new/DSC_2887_bn3nku.jpg",
-      "width": 3183,
-      "height": 3183,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -920,9 +633,6 @@
     },
     {
       "id": "DSC_2799_yg1afx",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943422/NNPhotography/gallery-new/DSC_2799_yg1afx.jpg",
-      "width": 3269,
-      "height": 4916,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -930,9 +640,6 @@
     },
     {
       "id": "DSC_2735_osblay",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943421/NNPhotography/gallery-new/DSC_2735_osblay.jpg",
-      "width": 2745,
-      "height": 4129,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -940,9 +647,6 @@
     },
     {
       "id": "DSC_2725_vhsdhm",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943420/NNPhotography/gallery-new/DSC_2725_vhsdhm.jpg",
-      "width": 4000,
-      "height": 2251,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -950,9 +654,6 @@
     },
     {
       "id": "DSC_2700_jlmjh3",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943416/NNPhotography/gallery-new/DSC_2700_jlmjh3.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -960,9 +661,6 @@
     },
     {
       "id": "DSC_2689_ddvnbj",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943414/NNPhotography/gallery-new/DSC_2689_ddvnbj.jpg",
-      "width": 6016,
-      "height": 4000,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -970,9 +668,6 @@
     },
     {
       "id": "DSC_2679_jkm6qt",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943414/NNPhotography/gallery-new/DSC_2679_jkm6qt.jpg",
-      "width": 5329,
-      "height": 3543,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -980,9 +675,6 @@
     },
     {
       "id": "DSC_2636_hfe8ef",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943412/NNPhotography/gallery-new/DSC_2636_hfe8ef.jpg",
-      "width": 4000,
-      "height": 6016,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -990,9 +682,6 @@
     },
     {
       "id": "DSC_2631_tfm1zv",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943412/NNPhotography/gallery-new/DSC_2631_tfm1zv.jpg",
-      "width": 3663,
-      "height": 5509,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -1000,9 +689,6 @@
     },
     {
       "id": "DSC_2234_xdqcsq",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943405/NNPhotography/gallery-new/DSC_2234_xdqcsq.jpg",
-      "width": 2831,
-      "height": 4258,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -1010,9 +696,6 @@
     },
     {
       "id": "DSC_2219_p4sv0l",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943404/NNPhotography/gallery-new/DSC_2219_p4sv0l.jpg",
-      "width": 3694,
-      "height": 2456,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
@@ -1020,9 +703,6 @@
     },
     {
       "id": "DSC_2192_sbhswr",
-      "src": "https://res.cloudinary.com/dhk0mr5qh/image/upload/v1712943402/NNPhotography/gallery-new/DSC_2192_sbhswr.jpg",
-      "width": 3060,
-      "height": 3060,
       "speciesOrTitle": "TODO: species or title",
       "location": "TODO: location",
       "story": "TODO: one-line story",
