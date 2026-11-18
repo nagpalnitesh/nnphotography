@@ -1,5 +1,5 @@
 export const CONTACT_ENDPOINT = 'https://backend.nnphotography.in/send-email';
-export const CONTACT_EMAIL = 'niteshnagpalphotography@gmail.com';
+export const CONTACT_EMAIL = 'hello@nnphotography.in';
 export const CONTACT_TIMEOUT_MS = 15000;
 
 // Resolves only when the backend acknowledges the send: HTTP 2xx and, if the
@@ -20,9 +20,7 @@ export const sendContactMessage = async (
       signal: controller.signal,
     });
   } catch (error) {
-    throw new Error(
-      error?.name === 'AbortError' ? 'timeout' : 'network',
-    );
+    throw new Error(error?.name === 'AbortError' ? 'timeout' : 'network');
   } finally {
     clearTimeout(timer);
   }

@@ -125,7 +125,7 @@ https://github.com/nagpalnitesh/nnphotography-backend
 
 📧 Email
 
-niteshnagpalphotography@gmail.com
+hello@nnphotography.in
 
 📸 Instagram
 
